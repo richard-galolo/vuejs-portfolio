@@ -84,15 +84,15 @@ onMounted(() => {
 					</div>
 				</div>
 				<div class="flex flex-col justify-center">
-					<h1 class="text-2xl font-semibold">
+					<h1 class="text-xl font-semibold">
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
 					</h1>
-					<span class="text-sm">PHP/Laravel Developer</span>
+					<span class="text-sm text-slate-700">PHP/Laravel Developer</span>
 				</div>
 			</div>
 
 			<div class="mt-6">
-				I'm a PHP Laravel developer with six years of experience, passionate about creating innovative and dynamic web applications.
+				I'm a PHP Laravel Developer with six years of experience, passionate about creating innovative and dynamic web applications.
 			</div>
 
 			<!-- Skills -->
