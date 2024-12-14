@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch, onMounted } from 'vue';
+import Timer from './components/Timer.vue'; // Adjust path as necessary
 
 // Reactive state for dark mode
 const isDarkMode = ref(false);
@@ -23,34 +24,37 @@ onMounted(() => {
 
 // SEO Meta data
 useSeoMeta({
-  title: 'Richard Galolo',
-  ogTitle: 'Richard Galolo',
-  description: 'This is my portfolio, let me tell you all about it.',
-  ogDescription: 'This is my portfolio, let me tell you all about it.',
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
+	favicon: '~/assets/img/profile.jpg',
+  title: 'Richard Galolo - PHP Laravel Developer Portfolio',
+  description: 'Welcome to the portfolio of Richard Galolo, a skilled PHP Laravel developer. Explore my journey, projects, and expertise in web development.',
+  author: 'Richard Galolo',
+  keywords: 'Richard Galolo, PHP, Laravel, web development, backend development, portfolio',
+  ogTitle: 'Richard Galolo - PHP Laravel Developer',
+  ogUrl: 'https://richardgalolo.com',
+  ogDescription: 'Discover the professional portfolio of Richard Galolo, showcasing expertise in PHP Laravel development and modern web solutions.',
+  ogImage: '~/assets/img/profile.jpg',
 });
 </script>
 
 <template>
-  <div class="grid grid-cols-12 sm:grid-cols-1 md:grid-cols-12 px-4 min-h-screen">
+  <main class="relative mx-auto max-w-xl px-4">
 		<div class="col-start-1 col-span-12 sm:col-start-1 sm:col-span-12 md:col-start-5 md:col-span-4">
 			<div class="navbar px-0">
 				<div class="flex-1">
-					<a class="text-xl font-semibold">RG</a>
+					<a class="text-lg font-bold gap-5">RG</a>
 				</div>
 				<div class="flex-none">
 					<div class="navbar-center">
 						<ul class="menu menu-horizontal">
 							<li>
-								<a>Home</a>
-							</li>
-							<li>
-								<a>Skills</a>
+								<a class="">Home</a>
 							</li>
 							<li>
 								<a>Projects</a>
 							</li>
+							<!-- <li>
+								<a>Experience</a>
+							</li> -->
 							<li>
 								<a>
 									<label class="swap swap-rotate">
@@ -84,23 +88,23 @@ useSeoMeta({
 			</div>
 
 			<!-- Introduction -->
-			<div class="flex gap-4 mt-5">
+			<div class="flex gap-4 mt-6">
 				<div>
 					<div class="avatar">
-						<div class="ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
+						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
 							<img src="~/assets/img/profile.jpg" />
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col justify-center">
 					<h1 class="text-2xl font-semibold">
-						Hi, I'm Richard <span class="ml-1 inline-block origin-bottom-right hover:animate-wave">👋</span>
+						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
 					</h1>
-					<span class="text-sm">PHP/Laravel Developer</span>
+					<span class="text-sm text-underline">PHP/Laravel Developer</span>
 				</div>
 			</div>
 
-			<div class="my-6">
+			<div class="mt-6">
 				I'm a PHP Laravel developer with six years of experience, passionate about creating innovative and dynamic web applications.
 			</div>
 
@@ -109,7 +113,7 @@ useSeoMeta({
 				<div class="mb-2 font-semibold text-medium">Skills</div>
 				<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +127,7 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +141,7 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +155,7 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +169,7 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +183,7 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
 									xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +197,7 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
                   viewBox="0 0 24 24"
@@ -205,18 +209,18 @@ useSeoMeta({
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto bg-base-300 hover:bg-custom-gray-dark-5 border border-transparent hover:border-custom-gray-dark-3 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
+						<div class="h-full w-auto bg-base-200 border border-transparent rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150" style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg class="fill-black stroke-black dark:fill-white dark:stroke-white"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <circle cx="512" cy="512" r="512" style="fill:#ffffff"></circle>
-                    <path d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z" style="fill:#000000"></path>
-                  </g>
-                </svg>
+									viewBox="0 0 1024 1024"
+									xmlns="http://www.w3.org/2000/svg">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+									<circle cx="512" cy="512" r="512" style="fill:#ffffff"></circle>
+									<path d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z" style="fill:#000000"></path>
+								</g>
+								</svg>
 							</div>
 							<div class="flex flex-col items-left justify-center">
 								<p class="text-sm md:text-md">MongoDB</p>
@@ -227,85 +231,121 @@ useSeoMeta({
 			</div>
 
 			<!-- Projects -->
-			<div class="my-8">
+			<div class="mt-8">
 				<div class="mb-2 font-semibold text-medium">Projects</div>
 					<div class="grid grid-cols-2 gap-4">
 						<div class="card bg-base-100 shadow-xl">
-							<figure class="p-3">
+							<figure class="p-4">
 								<img
-									src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+									src="@/assets/svg/empty.svg"
 									alt="Shoes"
 									class="rounded-xl" />
 							</figure>
-							<div class="card-body items-center text-center pt-0">
+							<div class="card-body items-center text-center p-4 pt-0">
 								<h5 class="text-sm font-medium">Stripe Payment</h5>
-								<p class="text-sm mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="text-sm mb-2">Developed a card management and checkout API using Laravel.</p>
 								<div class="card-actions">
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
-										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="mr-2 size-4">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
-										</svg>Source </button>
+									<a href="https://github.com/richard-galolo/laravel-stripe"
+										target="_blank"
+										rel="noopener noreferrer">
+										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+											<svg width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="currentColor"
+												class="md:mr-2 size-4">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
+											</svg>
+											<span class="hidden sm:block">Source</span>
+										</button>
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="card bg-base-100 shadow-xl">
-							<figure class="p-3">
+							<figure class="p-4">
 								<img
-									src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+									src="@/assets/svg/empty.svg"
 									alt="Shoes"
-									class="rounded-xl" />
+									class="rounded-xl"/>
 							</figure>
-							<div class="card-body items-center text-center pt-0">
-								<h3 class="text-sm font-medium">Auth Api Package</h3>
-								<p class="text-sm mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<div class="card-body items-center text-center p-4 pt-0">
+								<h3 class="text-sm font-medium">Auth API</h3>
+								<p class="text-sm mb-2">Created a user authentication API package compatible with any Laravel project.</p>
 								<div class="card-actions">
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
-										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="mr-2 size-4">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
-										</svg>Source </button>
+									<a href="https://github.com/richard-galolo/laravel-auth-api"
+										target="_blank"
+										rel="noopener noreferrer">
+										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+											<svg width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="currentColor"
+												class="md:mr-2 size-4">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
+											</svg>
+											<span class="hidden sm:block">Source</span>
+										</button>
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="card bg-base-100 shadow-xl">
-							<figure class="p-3">
+							<figure class="p-4">
 								<img
-									src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+									src="@/assets/svg/empty.svg"
 									alt="Shoes"
 									class="rounded-xl" />
 							</figure>
-							<div class="card-body items-center text-center pt-0">
-								<h3 class="text-sm font-medium">Nodejs Scraper</h3>
-								<p class="text-sm mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<div class="card-body items-center text-center p-4 pt-0">
+								<h3 class="text-sm font-medium">Web Scraper</h3>
+								<p class="text-sm mb-2">Built a web scraper in Node.js for extracting data from e-commerce websites.</p>
 								<div class="card-actions">
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
-										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="mr-2 size-4">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
-										</svg>Source </button>
+									<a href="https://github.com/richard-galolo/nodejs-web-scraper"
+										target="_blank"
+										rel="noopener noreferrer">
+										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+											<svg width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="currentColor"
+												class="md:mr-2 size-4">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
+											</svg>
+											<span class="hidden sm:block">Source</span>
+										</button>
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="card bg-base-100 shadow-xl">
-							<figure class="p-3">
+							<figure class="p-4">
 								<img
-									src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+									src="@/assets/svg/empty.svg"
 									alt="Shoes"
 									class="rounded-xl" />
 							</figure>
-							<div class="card-body items-center text-center pt-0">
+							<div class="card-body items-center text-center p-4 pt-0">
 								<h3 class="text-sm font-medium">Chrome Extension Scraper</h3>
-								<p class="text-sm mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="text-sm mb-2">Developed a chrome extension for scraping e-commerce websites.</p>
 								<div class="card-actions">
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
-										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="mr-2 size-4">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
-										</svg>Source </button>
+									<a href="https://github.com/richard-galolo/chrome-extension-web-scraper"
+										target="_blank"
+										rel="noopener noreferrer">
+										<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+											<svg width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="currentColor"
+												class="md:mr-2 size-4">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
+											</svg>
+											<span class="hidden sm:block">Source</span>
+										</button>
 									</a>
 								</div>
 							</div>
@@ -313,12 +353,35 @@ useSeoMeta({
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- footer -->
-	<footer class="footer footer-center text-base-content mt-4">
-		<aside>
-			<p>Copyright © 2024 - Richard</p>
-		</aside>
-	</footer>
+		<!-- footer -->
+		<footer class="flex footer text-base-content justify-between my-8">
+			<ul class="flex gap-5 font-sm">
+				<li>
+					<a class="flex items-center justify-center"
+						rel="noopener noreferrer"
+						target="_blank"
+						href="https://github.com/richard-galolo">
+						<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-4">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
+						</svg>
+						<p class="ml-2 hidden sm:block">GitHub</p>
+					</a>
+				</li>
+				<li>
+					<a class="flex items-center justify-center"
+						rel="noopener noreferrer"
+						target="_blank"
+						href="mailto:galolorichard34@gmail.com">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4">
+							<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+							<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+						</svg>
+						<p class="ml-2 hidden sm:block">Contact</p>
+					</a>
+				</li>
+			</ul>
+			<p>© 2024 - v1.0.0</p>
+		</footer>
+	</main>
 </template>
