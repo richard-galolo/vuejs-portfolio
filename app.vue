@@ -87,7 +87,7 @@ onMounted(() => {
 					<h1 class="text-xl font-semibold">
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
 					</h1>
-					<span class="text-sm text-slate-700">PHP/Laravel Developer</span>
+					<span class="text-sm text-slate-700 dark:text-gray-400">PHP/Laravel Developer</span>
 				</div>
 			</div>
 
