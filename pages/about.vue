@@ -17,16 +17,16 @@
 					<h1 class="text-xl font-semibold">
 						Richard Galolo
 					</h1>
-					<span class="text-sm text-[#6c757d]">
+					<p class="text-sm text-[#6c757d]">
             PHP/Laravel Developer
-          </span>
+          </p>
 				</div>
 			</div>
 
       <!-- Bio -->
-      <div class="mt-6 text-sm text-balance md:text-pretty">
+      <div class="mt-6">
         <p class="mb-2 font-semibold text-sm">About</p>
-				<p>Web developer with six years of experience. I enjoy creating new and innovative web applications. I am seeking a challenging role that will allow me to continuously improve my skills and contribute to the success of the team.</p>
+				<p class="text-sm text-balance">Web developer with six years of experience. I enjoy creating new and innovative web applications. I am seeking a challenging role that will allow me to continuously improve my skills and contribute to the success of the team.</p>
 			</div>
 
       <!-- Experiences -->

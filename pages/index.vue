@@ -31,8 +31,8 @@
 			</div>
 
       <!-- Bio -->
-      <div class="mt-6 text-sm text-balance md:text-pretty">
-				<p>I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</p>
+      <div class="mt-6">
+				<p class="text-sm text-pretty">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</p>
 			</div>
 
       <!-- skills -->
@@ -40,7 +40,7 @@
 				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -57,7 +57,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -74,7 +74,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -91,7 +91,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -108,7 +108,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -125,7 +125,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -142,7 +142,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -157,7 +157,7 @@
 						</div>
 					</a>
 					<a data-state="closed">
-						<div class="h-full w-auto border border-slate-300 rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+						<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
 							style="transform: none;">
 							<div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
 								<svg
@@ -185,7 +185,7 @@
       <div class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-2 gap-4">
-          <div class="card border border-slate-300 rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
                 src="@/assets/svg/empty.svg"
@@ -223,7 +223,7 @@
                 <a href="https://github.com/richard-galolo/laravel-auth-api"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border dark:border-[#6c757d] bg-background h-10 px-4 py-2">
                     <!-- Github Icon -->
                     <svg
                       width="16"
@@ -240,7 +240,7 @@
               </div>
             </div>
           </div>
-          <div class="card border border-slate-300 rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
                 src="@/assets/svg/empty.svg"
@@ -287,7 +287,7 @@
                 <a href="https://github.com/richard-galolo/laravel-stripe"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border dark:border-[#6c757d] bg-background h-10 px-4 py-2">
                     <!-- Github Icon -->
                     <svg width="16"
                       height="16"
@@ -303,7 +303,7 @@
               </div>
             </div>
           </div>
-          <div class="card border border-slate-300 rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
                 src="@/assets/svg/empty.svg"
@@ -342,7 +342,7 @@
                 <a href="https://github.com/richard-galolo/nodejs-web-scraper"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border dark:border-[#6c757d] bg-background h-10 px-4 py-2">
                     <!-- Github Icon -->
                     <svg
                       width="16"
@@ -359,7 +359,7 @@
               </div>
             </div>
           </div>
-          <div class="card border border-slate-300 rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
                 src="@/assets/svg/empty.svg"
@@ -368,7 +368,7 @@
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Chrome Extension Scraper</h3>
-              <p class="text-sm text-[#6c757d] mb-2">Developed a chrome extension for scraping e-commerce websites.</p>
+              <p class="text-sm text-[#6c757d] mb-2">Developed a simple chrome extension for scraping e-commerce websites.</p>
               <div class="flex gap-2 mb-2">
                 <!-- Chrome Icon -->
                 <svg
@@ -416,7 +416,7 @@
                 <a href="https://github.com/richard-galolo/chrome-extension-web-scraper"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+                  <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border dark:border-[#6c757d] bg-background h-10 px-4 py-2">
                     <!-- Github Icon -->
                     <svg
                       width="16"
