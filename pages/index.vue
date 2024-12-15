@@ -7,7 +7,7 @@
       <!-- Introduction -->
 			<div class="flex gap-5 mt-6">
 				<div>
-					<div class="avatar">
+					<div class="avatar ml-1">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
             <img src="~/assets/img/profile.jpg" />
 						</div>
@@ -440,6 +440,64 @@
           </div>
 				</div>
 			</div>
+
+      <!-- Hire Me -->
+      <div class="mt-6 bg-amber-100 dark:bg-black p-5 rounded-xl">
+        <p class="mb-2 font-semibold text-sm">Hire Me!</p>
+        <p class="text-sm text-[#6c757d]">
+          I’m available for exciting opportunities in backend development and web applications. Let’s collaborate to create impactful solutions!
+        </p>
+        <div class="flex mt-4 gap-3">
+            <a href="mailto:richardgalolo@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-black dark:border-[#6c757d] bg-background h-10 px-4 py-2">
+                <!-- Email Icon -->
+                <svg
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="md:mr-2 size-4">
+                  <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+                </svg>
+                <span class="hidden sm:block ">Email</span>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/richard-galolo-b7a4ab180/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-black dark:border-[#6c757d] bg-background h-10 px-4 py-2">
+                <!-- LinkedIn Icon -->
+                <svg
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
+                  class="md:mr-2 size-4">
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                </svg>
+                <span class="hidden sm:block">LinkedIn</span>
+              </button>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~01572f9aec60afec03"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-black dark:border-[#6c757d] bg-background h-10 px-4 py-2">
+                <!-- Upwork Icon -->
+                <svg
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 641 512"
+                  fill="currentColor"
+                  class="md:mr-2 size-4">
+                  <path d="M494.7 295.6c-50.3 0-83.5-38.9-92.8-53.9c11.9-95.3 46.8-125.4 92.8-125.4c45.5 0 80.9 36.4 80.9 89.7s-35.4 89.7-80.9 89.7zm0-237.8c-81.9 0-127.8 53.4-141 108.4c-14.9-28-25.9-65.5-34.5-100.3H206v141c0 51.1-23.3 89-68.8 89s-71.6-37.8-71.6-89l.5-141H.8v141c0 41.1 13.3 78.4 37.6 105.1c25 27.5 59.2 41.8 98.8 41.8c78.8 0 133.8-60.4 133.8-146.9V112.1c8.2 31.2 27.8 91.1 65.3 143.6l-35 199.4h66.4l23.1-141.3c7.6 6.3 15.7 12 24.2 17c22.2 14 47.7 21.9 73.9 22.8c0 0 4 .2 6.1 .2c81.2 0 145.9-62.9 145.9-147.8s-64.8-148.1-146-148.1z" />
+                </svg>
+                <span class="hidden sm:block">Upwork</span>
+              </button>
+            </a>
+        </div>
+      </div>
     </main>
 
     <Footer />
