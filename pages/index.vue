@@ -17,7 +17,7 @@
 					<h1 class="text-xl font-semibold">
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
 					</h1>
-					<span class="text-sm text-gray-400 dark:text-gray-400">PHP/Laravel Developer</span>
+					<span class="text-sm text-[#6c757d]">PHP/Laravel Developer</span>
 				</div>
 			</div>
 
@@ -184,7 +184,7 @@
             </figure>
             <div class="card-body items-center text-center p-4 pt-0">
               <h3 class="text-sm font-medium">Authentication API</h3>
-              <p class="text-sm mb-2">Created a user authentication API package compatible with any Laravel project.</p>
+              <p class="text-sm text-[#6c757d] mb-2">Created a user authentication API package compatible with any Laravel project.</p>
               <div class="card-actions">
                 <a href="https://github.com/richard-galolo/laravel-auth-api"
                   target="_blank"
@@ -213,7 +213,7 @@
             </figure>
             <div class="card-body items-center text-center p-4 pt-0">
               <h5 class="text-sm font-medium">Stripe Payment</h5>
-              <p class="text-sm mb-2">Developed a card management and checkout API using Laravel.</p>
+              <p class="text-sm text-[#6c757d] mb-2">Developed a card management and checkout API using Laravel.</p>
               <div class="card-actions">
                 <a href="https://github.com/richard-galolo/laravel-stripe"
                   target="_blank"
@@ -242,7 +242,7 @@
             </figure>
             <div class="card-body items-center text-center p-4 pt-0">
               <h3 class="text-sm font-medium">Web Scraper</h3>
-              <p class="text-sm mb-2">Built a web scraper in Node.js for extracting data from e-commerce websites.</p>
+              <p class="text-sm text-[#6c757d] mb-2">Built a web scraper in Node.js for extracting data from e-commerce websites.</p>
               <div class="card-actions">
                 <a href="https://github.com/richard-galolo/nodejs-web-scraper"
                   target="_blank"
@@ -271,7 +271,7 @@
             </figure>
             <div class="card-body items-center text-center p-4 pt-0">
               <h3 class="text-sm font-medium">Chrome Extension Scraper</h3>
-              <p class="text-sm mb-2">Developed a chrome extension for scraping e-commerce websites.</p>
+              <p class="text-sm text-[#6c757d] mb-2">Developed a chrome extension for scraping e-commerce websites.</p>
               <div class="card-actions">
                 <a href="https://github.com/richard-galolo/chrome-extension-web-scraper"
                   target="_blank"

@@ -17,7 +17,7 @@
 					<h1 class="text-xl font-semibold">
 						Richard Galolo
 					</h1>
-					<span class="text-sm text-gray-400 dark:text-gray-400">
+					<span class="text-sm text-[#6c757d]">
             PHP/Laravel Developer
           </span>
 				</div>
@@ -38,7 +38,7 @@
             <div class="flex flex-1 flex-col text-sm">
               <p>Laravel Developer at Freelance</p>
               <p>Remote</p>
-              <ul class="list-inside text-gray-400 text-balance leading-5">
+              <ul class="list-inside text-[#6c757d] text-balance leading-5">
                   <li class="mt-2">
                     &#8226; Developed fully-functional web applications from scratch, beginning with the creation of database schema diagrams to guide the development process.
                   </li>
@@ -68,7 +68,7 @@
             <div class="flex flex-1 flex-col text-sm">
               <p >Laravel Developer at TBL Technerds</p>
               <p>Remote</p>
-              <ul class="list-inside text-gray-400 text-balance leading-5">
+              <ul class="list-inside text-[#6c757d] text-balance leading-5">
                   <li class="mt-2">
                     &#8226; Managed both backend and web administration for web and mobile applications, optimizing performance and scalability.
                   </li>
@@ -89,7 +89,7 @@
             <div class="flex flex-1 flex-col text-sm">
               <p>Web Developer at D’Courtyard Technology Hub</p>
               <p>Office</p>
-              <ul class="list-inside text-gray-400 text-balance leading-5">
+              <ul class="list-inside text-[#6c757d] text-balance leading-5">
                 <li class="mt-2">
                   &#8226; Developed and maintained the administrator side of a mobile application by implementing new features and ensuring optimal functionality.
                 </li>
@@ -105,6 +105,7 @@
         </div>
       </div>
 
+      <!-- Education -->
       <div class="mt-6">
         <div class="mb-2 font-semibold text-sm">Education</div>
         <div class="flex flex-col gap-6">
@@ -112,7 +113,7 @@
             <div class="mr-8 w-full max-w-[100px] text-sm">June 2015 - March 2019</div>
             <div class="flex flex-1 flex-col text-sm">
               <p>Bachelor of Science in Information Technology</p>
-              <ul class="list-inside text-gray-400 text-balance">
+              <ul class="list-inside text-[#6c757d] text-balance">
                 <li>
                   AMA Computer Learning Center
                 </li>
@@ -124,6 +125,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Contact -->
       <div class="mt-6">
         <div class="mb-2 font-semibold text-sm">Contact</div>
         <div class="flex flex-col gap-6">
@@ -133,7 +136,7 @@
               <a href="mailto:richardgalolo@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-gray-400 hover:underline">
+                class="inline-flex text-[#6c757d] hover:underline">
                 richardgalolo@gmail.com
                 <svg width="12"
                   height="12"
@@ -145,13 +148,13 @@
               </a>
             </div>
           </div>
-          <div class="flex">
+          <div class="flex text-sm">
             <div class="mr-8 w-full max-w-[100px]">LinkedIn</div>
             <div class="flex flex-1 flex-col">
               <a href="https://www.linkedin.com/in/richard-galolo-b7a4ab180/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-gray-400 hover:underline">
+                class="inline-flex text-[#6c757d] hover:underline">
                 richard-galolo
                 <svg width="12"
                   height="12"
