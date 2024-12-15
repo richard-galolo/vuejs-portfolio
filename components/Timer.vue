@@ -1,5 +1,5 @@
 <template>
-  <p class="text-sm">{{ currentTime }}</p>
+  {{ currentTime }}
 </template>
 
 <script>

@@ -16,8 +16,17 @@
 				<div class="flex flex-col justify-center">
 					<h1 class="text-xl font-semibold">
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
+            <!-- <span class="text-xs font-light text-[#6c757d] ml-2"><Timer /></span> -->
 					</h1>
-					<span class="text-sm text-[#6c757d]">PHP/Laravel Developer</span>
+					<span class="flex gap-1 text-sm text-[#6c757d]">
+            <svg
+              class="fill-[#22c55e]"
+              width="8"
+              viewBox="0 0 6 6"
+              aria-hidden="true">
+              <circle r="3" cx="3" cy="3"></circle>
+            </svg> Available for work
+          </span>
 				</div>
 			</div>
 
