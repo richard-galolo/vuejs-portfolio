@@ -23,7 +23,7 @@
 
       <!-- Bio -->
       <div class="mt-6 text-sm text-balance md:text-pretty">
-				<p>I'm a PHP Laravel Developer with six years of experience specializing in backend development.</p>
+				<p>I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</p>
 			</div>
 
       <!-- skills -->
@@ -215,7 +215,9 @@
                   target="_blank"
                   rel="noopener noreferrer">
                   <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
-                    <svg width="16"
+                    <!-- Github Icon -->
+                    <svg
+                      width="16"
                       height="16"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg"
@@ -248,6 +250,21 @@
 									viewBox="0 0 512 512">
 									<path d="M107.2 0c2.5 0 4.7 .8 6.7 2l94.3 54.1c2.7 1.5 4.5 3.5 5.4 5.9c.9 2.2 .9 4.3 .9 5.6l0 193.4 69.2-39.7 0-100.3c0-2.6 .6-5 2.2-7.2c1.5-2.1 3.5-3.6 5.7-4.8c0 0 0 0 0 0l94-54c1.6-.9 3.4-1.6 5.5-1.6s4 .7 5.6 1.6l95.8 55.1c2.3 1.3 3.9 3 4.9 5.3c.9 2.1 .9 4.2 .9 5.8l0 107.2c0 2-.2 4.3-1.4 6.4c-1.2 2.2-3 3.7-5.1 4.9l-.1 .1-88 50.5 0 100c0 2.3-.3 4.8-1.6 7c-1.3 2.2-3.3 3.7-5.3 4.9c0 0 0 0-.1 0L208.7 510c-2.2 1.2-4.5 2-7.1 2s-4.9-.9-7.1-2l-.1-.1L7.1 402l-.5-.3c-1.1-.7-2.6-1.7-3.8-2.9C.9 396.9 0 394.6 0 391.6L0 65.9c0-4.8 3-7.9 5.5-9.3L100.5 2c2-1.2 4.3-2 6.8-2zM38.1 67.1l69 39.9 69.2-39.9L107.1 27.4l-69 39.7zm353 93.2l69-39.7-69-39.7-69.1 39.7 69.1 39.7zM189.2 89L120 128.8l0 186.4 69.2-39.9 0-186.4zM94.5 128.9L25.2 89.1l0 294.2 164 94.2 0-79.4-87.3-49.3-.2-.1c-1.3-.8-3.2-1.9-4.6-3.7c-1.7-2.1-2.5-4.7-2.5-7.7l0-208.5zm214.7 92.4l69.3 39.6 0-78.5-69.3-39.9 0 78.8zm94.5 39.6L473 221.2l0-78.8-69.3 39.9 0 78.5zM201.6 376.1l163.8-93.2-69-39.9L133 337.1l68.6 38.9zm12.9 101.5l164-94.2 0-78.8-164 93.6 0 79.4z"/>
 								</svg>
+                <!-- html5 Icon -->
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                    <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                    <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
+                  </g>
+                </svg>
                 <!-- Stripe Icon -->
                 <svg
                   class="fill-[#6772E5]"
@@ -262,6 +279,7 @@
                   target="_blank"
                   rel="noopener noreferrer">
                   <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
+                    <!-- Github Icon -->
                     <svg width="16"
                       height="16"
                       viewBox="0 0 16 16"
@@ -304,10 +322,10 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <rect width="400" height="400" rx="30" fill="#E88C1F"/>
                   <path
-                      d="m 312 122.5 c 0.2 -2.1 -1.4 -3.1 -2.5 -4.5 c -13.1 -15.8 -29.1 -27.9 -47.6 -36.3 c -10.6 -4.8 -22 -8 -33.9 -9.4 c -11.4 -1.4 -22.6 -2.1 -34 -0.8 c -14.5 1.6 -28.3 5.8 -41.5 12 c -21.1 9.9 -38 24.9 -51.3 43.6 c -8.5 11.8 -14.6 25.1 -18.2 39.4 c -3.7 14.6 -5.8 29.3 -4.2 44.5 c 1.1 10.4 2.6 20.5 5.7 30.5 c 4.5 14.6 11.8 27.9 21.1 39.9 c 10.6 13.7 23.4 25.1 38.5 33.5 c 17.5 9.7 36.3 15.5 56.4 16.7 c 7.4 0.4 14.8 0.5 22 -0.4 c 8.6 -1 17.2 -2.9 25.6 -5.5 c 10.4 -3.3 20.2 -7.6 29.4 -13.3 c 13.2 -8.2 25.1 -18 34.4 -31.1 c -21.9 -16.5 -43.8 -32.8 -65.9 -49.4 c -10.1 11.4 -22.4 17.2 -37.4 17.1 c -13.6 -0.2 -25.1 -5.7 -33.9 -15.6 c -17.8 -20 -15.2 -51.1 5.8 -68 c 18.7 -15.1 49.3 -13 65.5 7.2 c 22 -16.5 44 -33 66 -50.1 z"
-                      fill="#FFF"
-                      stroke="#000"
-                      stroke-width="18"
+                    d="m 312 122.5 c 0.2 -2.1 -1.4 -3.1 -2.5 -4.5 c -13.1 -15.8 -29.1 -27.9 -47.6 -36.3 c -10.6 -4.8 -22 -8 -33.9 -9.4 c -11.4 -1.4 -22.6 -2.1 -34 -0.8 c -14.5 1.6 -28.3 5.8 -41.5 12 c -21.1 9.9 -38 24.9 -51.3 43.6 c -8.5 11.8 -14.6 25.1 -18.2 39.4 c -3.7 14.6 -5.8 29.3 -4.2 44.5 c 1.1 10.4 2.6 20.5 5.7 30.5 c 4.5 14.6 11.8 27.9 21.1 39.9 c 10.6 13.7 23.4 25.1 38.5 33.5 c 17.5 9.7 36.3 15.5 56.4 16.7 c 7.4 0.4 14.8 0.5 22 -0.4 c 8.6 -1 17.2 -2.9 25.6 -5.5 c 10.4 -3.3 20.2 -7.6 29.4 -13.3 c 13.2 -8.2 25.1 -18 34.4 -31.1 c -21.9 -16.5 -43.8 -32.8 -65.9 -49.4 c -10.1 11.4 -22.4 17.2 -37.4 17.1 c -13.6 -0.2 -25.1 -5.7 -33.9 -15.6 c -17.8 -20 -15.2 -51.1 5.8 -68 c 18.7 -15.1 49.3 -13 65.5 7.2 c 22 -16.5 44 -33 66 -50.1 z"
+                    fill="#FFF"
+                    stroke="#000"
+                    stroke-width="18"
                   />
                 </svg>
               </div>
@@ -316,7 +334,9 @@
                   target="_blank"
                   rel="noopener noreferrer">
                   <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
-                    <svg width="16"
+                    <!-- Github Icon -->
+                    <svg
+                      width="16"
                       height="16"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg"
@@ -367,13 +387,30 @@
                     </defs>
                   </g>
                 </svg>
+                <!-- html5 Icon -->
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                    <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                    <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
+                  </g>
+                </svg>
               </div>
               <div class="card-actions">
                 <a href="https://github.com/richard-galolo/chrome-extension-web-scraper"
                   target="_blank"
                   rel="noopener noreferrer">
                   <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50 border border-input bg-background h-10 px-4 py-2">
-                    <svg width="16"
+                    <!-- Github Icon -->
+                    <svg
+                      width="16"
                       height="16"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg"

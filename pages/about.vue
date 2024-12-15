@@ -138,7 +138,8 @@
                 rel="noopener noreferrer"
                 class="inline-flex text-[#6c757d] hover:underline">
                 richardgalolo@gmail.com
-                <svg width="12"
+                <svg
+                  width="12"
                   height="12"
                   viewBox="0 0 12 12"
                   fill="none"
@@ -156,7 +157,8 @@
                 rel="noopener noreferrer"
                 class="inline-flex text-[#6c757d] hover:underline">
                 richard-galolo
-                <svg width="12"
+                <svg
+                  width="12"
                   height="12"
                   viewBox="0 0 12 12"
                   fill="none"
