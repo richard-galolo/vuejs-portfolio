@@ -27,7 +27,7 @@
   <div class="navbar px-0">
     <div class="flex-1">
       <NuxtLink to="/">
-        <span class="text-lg font-black gap-5">RG</span>
+        <span class="text-base font-black">RG</span>
       </NuxtLink>
     </div>
     <div class="flex-none">
@@ -37,7 +37,7 @@
             <NuxtLink to="/">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/experience">Experience</NuxtLink>
+            <NuxtLink to="/about">About</NuxtLink>
           </li>
           <li>
             <a>

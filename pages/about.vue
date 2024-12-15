@@ -17,85 +17,86 @@
 					<h1 class="text-xl font-semibold">
 						Richard Galolo
 					</h1>
-					<span class="text-sm text-slate-700 dark:text-gray-400">
+					<span class="text-sm text-gray-400 dark:text-gray-400">
             PHP/Laravel Developer
           </span>
 				</div>
 			</div>
 
       <!-- Bio -->
-      <div class="mt-6 text-balance md:text-pretty">
-				Web developer with 6 years of experience. I enjoy creating new and innovative web applications. I am seeking a challenging role that will allow me to continuously improve my skills and contribute to the success of the team.
+      <div class="mt-6 text-sm text-balance md:text-pretty">
+        <p class="mb-2 font-semibold text-sm">About</p>
+				<p>Web developer with six years of experience. I enjoy creating new and innovative web applications. I am seeking a challenging role that will allow me to continuously improve my skills and contribute to the success of the team.</p>
 			</div>
 
       <!-- Experiences -->
-      <div class="mt-8">
-        <div class="mb-2 font-semibold text-medium">Work Experience</div>
+      <div class="mt-6">
+        <p class="mb-2 font-semibold text-sm">Work Experience</p>
         <div class="flex flex-col gap-6">
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px]">April 2020 - Present</div>
-            <div class="flex flex-1 flex-col">
-              <h4>Laravel Developer at Freelance</h4>
+            <div class="mr-8 w-full max-w-[100px] text-sm">April 2020 - Present</div>
+            <div class="flex flex-1 flex-col text-sm">
+              <p>Laravel Developer at Freelance</p>
               <p>Remote</p>
-              <ul class="list-inside text-gray-400 text-balance">
-                  <li>
+              <ul class="list-inside text-gray-400 text-balance leading-5">
+                  <li class="mt-2">
                     &#8226; Developed fully-functional web applications from scratch, beginning with the creation of database schema diagrams to guide the development process.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Conducted comprehensive website testing and debugging to ensure optimal functionality across a range of browsers and devices.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Collaborated closely with cross-functional teams to identify and prioritize website features and functionality based on business requirements and user needs.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Maintained and updated existing websites with fresh content, new features, and enhanced functionality to improve user engagement.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Integrating third-party applications and APIs into websites to enhance functionality.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Utilized a range of APIs including Payment Gateways (Stripe, Paypal, Dragonpay), Cloud Storage (AWS S3, Azure Blob, Digital Ocean Spaces, Wazabi, BunnyCDN, Box), Mail/SMS Drivers (Sendgrid, Mailchimp, Twillio, Movider), Error Logging (Sentry, Rollbar, Papertrails, Slack), and CMS (Freshdesk).
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Utilized tools such as Bitbucket, Gitlab, Github, Codebase, JIRA, MS Teams, Slack, Sequel Pro, Postman, Forge, and Digital Ocean.
                   </li>
               </ul>
             </div>
           </div>
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px]">December 2019 - April 2020</div>
-            <div class="flex flex-1 flex-col">
-              <h4>Laravel Developer at TBL Technerds</h4>
+            <div class="mr-8 w-full max-w-[100px] text-sm">December 2019 - April 2020</div>
+            <div class="flex flex-1 flex-col text-sm">
+              <p >Laravel Developer at TBL Technerds</p>
               <p>Remote</p>
-              <ul class="list-inside text-gray-400 text-balance">
-                  <li>
+              <ul class="list-inside text-gray-400 text-balance leading-5">
+                  <li class="mt-2">
                     &#8226; Managed both backend and web administration for web and mobile applications, optimizing performance and scalability.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Translated mockup designs into responsive HTML/CSS code, ensuring accuracy and attention to detail.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Integrated Stripe and PayPal APIs for secure and reliable payment processing, improving user satisfaction and financial efficiency.
                   </li>
-                  <li>
+                  <li class="mt-2">
                     &#8226; Utilized tools such as Bitbucket, Cpanel, Trello, Slack, VSCode, and TimeDoctor.
                   </li>
               </ul>
             </div>
           </div>
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px]">February 2019 - November 2019</div>
-            <div class="flex flex-1 flex-col">
-              <h4>Web Developer at D’Courtyard Technology Hub</h4>
+            <div class="mr-8 w-full max-w-[100px] text-sm">February 2019 - November 2019</div>
+            <div class="flex flex-1 flex-col text-sm">
+              <p>Web Developer at D’Courtyard Technology Hub</p>
               <p>Office</p>
-              <ul class="list-inside text-gray-400 text-balance">
-                <li>
+              <ul class="list-inside text-gray-400 text-balance leading-5">
+                <li class="mt-2">
                   &#8226; Developed and maintained the administrator side of a mobile application by implementing new features and ensuring optimal functionality.
                 </li>
-                <li>
+                  <li class="mt-2">
                   &#8226; Collaborated with team members in weekly meetings to discuss project progress, identify challenges, and develop solutions.
                 </li>
-                <li>
+                <li class="mt-2">
                   &#8226; Utilized tools such as Bitbucket, JIRA, Sequel Pro, VSCode and Digital Ocean.
                 </li>
               </ul>
@@ -104,13 +105,13 @@
         </div>
       </div>
 
-      <div class="mt-8">
-        <div class="mb-2 font-semibold text-medium">Education</div>
+      <div class="mt-6">
+        <div class="mb-2 font-semibold text-sm">Education</div>
         <div class="flex flex-col gap-6">
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px]">June 2015 - March 2019</div>
-            <div class="flex flex-1 flex-col">
-              <h4>Bachelor of Science in Information Technology</h4>
+            <div class="mr-8 w-full max-w-[100px] text-sm">June 2015 - March 2019</div>
+            <div class="flex flex-1 flex-col text-sm">
+              <p>Bachelor of Science in Information Technology</p>
               <ul class="list-inside text-gray-400 text-balance">
                 <li>
                   AMA Computer Learning Center
@@ -123,10 +124,10 @@
           </div>
         </div>
       </div>
-      <div class="mt-8">
-        <div class="mb-2 font-semibold text-medium">Contact</div>
+      <div class="mt-6">
+        <div class="mb-2 font-semibold text-sm">Contact</div>
         <div class="flex flex-col gap-6">
-          <div class="flex">
+          <div class="flex text-sm">
             <div class="mr-8 w-full max-w-[100px]">Email</div>
             <div class="flex flex-1 flex-col">
               <a href="mailto:richardgalolo@gmail.com"
