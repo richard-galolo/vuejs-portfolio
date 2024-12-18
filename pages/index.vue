@@ -185,7 +185,7 @@
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Authentication API</h3>
-              <p class="text-sm text-[#6c757d]">Created a user authentication API package compatible with any Laravel project.</p>
+              <p class="text-sm text-[#6c757d] mb-2">Created a user authentication API package compatible with any Laravel project.</p>
               <div class="flex gap-2 mb-2">
                 <!-- Laravel Icon -->
                 <svg
