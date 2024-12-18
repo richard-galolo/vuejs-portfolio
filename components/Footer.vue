@@ -5,7 +5,8 @@
         <a class="flex items-center justify-center"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://github.com/richard-galolo">
+          href="https://github.com/richard-galolo"
+          aria-label="Visit Richard Galolo's GitHub profile">
             <svg
               width="24"
               height="24"
@@ -22,7 +23,8 @@
         <a class="flex items-center justify-center"
           rel="noopener noreferrer"
           target="_blank"
-          href="mailto:richardgalolo@gmail.com">
+          href="mailto:richardgalolo@gmail.com"
+          aria-label="Send an email to Richard Galolo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
