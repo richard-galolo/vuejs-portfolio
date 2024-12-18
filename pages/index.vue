@@ -234,10 +234,9 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
-                width="100%"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl" />
+                class="rounded-xl w-full h-auto" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Stripe Payment</h3>
@@ -299,10 +298,9 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
-                width="100%"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl" />
+                class="rounded-xl w-full h-auto" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Web Scraper</h3>
@@ -356,10 +354,9 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
-                width="100%"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl" />
+                class="rounded-xl w-full h-auto" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Chrome Extension Scraper</h3>
