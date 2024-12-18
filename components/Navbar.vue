@@ -27,7 +27,7 @@
   <div class="navbar px-0">
     <div class="flex-1">
       <NuxtLink to="/">
-        <span class="text-base font-black">RG</span>
+        <span class="text-base font-black tracking-[-1px]">R G</span>
       </NuxtLink>
     </div>
     <div class="flex-none">

@@ -10,7 +10,7 @@
 					<div class="avatar">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
             <img
-              src="~/assets/img/profile.jpg"
+              src="~/assets/img/profile.png"
               alt="profile image"/>
 						</div>
 					</div>

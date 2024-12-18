@@ -16,10 +16,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Richard Galolo' },
         { property: 'og:url', content: 'https://richardgalolo.com' },
         { property: 'og:description', content: 'Discover the professional portfolio of Richard Galolo, showcasing expertise in PHP Laravel development and modern web solutions.' },
-        { property: 'og:image', content: '/_nuxt/assets/img/profile.jpg'} // Use `/` instead of `~/assets` for static files
-      ],
-      link: [
-        { rel: 'icon', type: 'image/jpeg', href: '/_nuxt/assets/img/profile.jpg'} // Favicon image
+        { property: 'og:image', content: '/_nuxt/assets/img/profile.png'} // Use `/` instead of `~/assets` for static files
       ]
     },
   },

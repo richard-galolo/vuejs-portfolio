@@ -10,7 +10,7 @@
 					<div class="avatar ml-1">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
               <img
-                src="~/assets/img/profile.jpg"
+                src="~/assets/img/profile.png"
                 alt="profile image"/>
 						</div>
 					</div>
@@ -39,7 +39,7 @@
 
       <!-- Bio -->
       <div class="mt-6">
-				<p class="text-sm text-pretty">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</p>
+				<h2 class="text-sm text-pretty">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
 			</div>
 
       <!-- skills -->
@@ -179,13 +179,12 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
-                width="100%"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl"/>
+                class="rounded-xl w-full h-auto"/>
             </figure>
             <div class="card-body p-4 pt-0">
-              <h2 class="text-sm font-medium">Authentication API</h2>
+              <h3 class="text-sm font-medium">Authentication API</h3>
               <p class="text-sm text-[#6c757d]">Created a user authentication API package compatible with any Laravel project.</p>
               <div class="flex gap-2 mb-2">
                 <!-- Laravel Icon -->
@@ -241,7 +240,7 @@
                 class="rounded-xl" />
             </figure>
             <div class="card-body p-4 pt-0">
-              <h2 class="text-sm font-medium">Stripe Payment</h2>
+              <h3 class="text-sm font-medium">Stripe Payment</h3>
               <p class="text-sm text-[#6c757d] mb-2">Developed a card management and checkout API using Laravel.</p>
               <div class="flex gap-2 mb-2">
                 <!-- Laravel Icon -->
@@ -306,7 +305,7 @@
                 class="rounded-xl" />
             </figure>
             <div class="card-body p-4 pt-0">
-              <h2 class="text-sm font-medium">Web Scraper</h2>
+              <h3 class="text-sm font-medium">Web Scraper</h3>
               <p class="text-sm text-[#6c757d] mb-2">Built a web scraper in Node.js for extracting data from e-commerce websites.</p>
               <div class="flex gap-2 mb-2">
                 <!-- Node.js Icon -->
@@ -363,7 +362,7 @@
                 class="rounded-xl" />
             </figure>
             <div class="card-body p-4 pt-0">
-              <h2 class="text-sm font-medium">Chrome Extension Scraper</h2>
+              <h3 class="text-sm font-medium">Chrome Extension Scraper</h3>
               <p class="text-sm text-[#6c757d] mb-2">Developed a simple chrome extension for scraping e-commerce websites.</p>
               <div class="flex gap-2 mb-2">
                 <!-- Chrome Icon -->
