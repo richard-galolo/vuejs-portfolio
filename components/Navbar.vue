@@ -41,10 +41,13 @@
           </li>
           <li>
             <a>
-              <label class="swap swap-rotate">
+              <label
+                class="swap swap-rotate"
+                for="theme-controller">
                 <!-- this hidden checkbox controls the state -->
                 <input type="checkbox"
                   class="theme-controller"
+                  id="theme-controller"
                   value="dark"
                   v-model="isDarkMode" />
                 <!-- sun icon -->

@@ -3,9 +3,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        // class: 'dark', // Adds the 'dark' class to the <html> tag
+        lang: 'en',
         style: 'scroll-padding-top: 5rem; scroll-behavior: smooth;',
-        "data-theme": 'light'
+        "data-theme": 'light',
+        // class: 'dark', // Adds the 'dark' class to the <html> tag
       },
       title: 'Richard Galolo',
       meta: [
