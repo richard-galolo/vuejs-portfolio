@@ -9,7 +9,9 @@
 				<div>
 					<div class="avatar">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
-            <img src="~/assets/img/profile.jpg" />
+            <img
+              src="~/assets/img/profile.jpg"
+              alt="profile image"/>
 						</div>
 					</div>
 				</div>
