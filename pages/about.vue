@@ -10,6 +10,8 @@
 					<div class="avatar">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
             <img
+              width="64"
+              height="64"
               src="~/assets/img/profile.png"
               alt="profile image"/>
 						</div>
@@ -20,7 +22,7 @@
 						Richard Galolo
 					</h1>
 					<p class="text-sm text-[#6c757d]">
-            PHP/Laravel Developer
+            PHP Laravel Developer
           </p>
 				</div>
 			</div>
@@ -36,9 +38,9 @@
         <p class="mb-2 font-semibold text-sm">Work Experience</p>
         <div class="flex flex-col gap-6">
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">April 2020 - Present</div>
+            <div class="mr-8 w-full max-w-[100px] text-sm">2021 - Present</div>
             <div class="flex flex-1 flex-col text-sm">
-              <p>Laravel Developer at Freelance</p>
+              <p>Web Developer at Freelance</p>
               <p>Remote</p>
               <ul class="list-inside text-[#6c757d] text-balance leading-5">
                   <li class="mt-2">
@@ -66,7 +68,7 @@
             </div>
           </div>
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">December 2019 - April 2020</div>
+            <div class="mr-8 w-full max-w-[100px] text-sm">2020 - 2021</div>
             <div class="flex flex-1 flex-col text-sm">
               <p >Laravel Developer at TBL Technerds</p>
               <p>Remote</p>
@@ -87,7 +89,7 @@
             </div>
           </div>
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">February 2019 - November 2019</div>
+            <div class="mr-8 w-full max-w-[100px] text-sm">2019 - 2020</div>
             <div class="flex flex-1 flex-col text-sm">
               <p>Web Developer at D’Courtyard Technology Hub</p>
               <p>Office</p>
@@ -112,7 +114,7 @@
         <div class="mb-2 font-semibold text-sm">Education</div>
         <div class="flex flex-col gap-6">
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">June 2015 - March 2019</div>
+            <div class="mr-8 w-full max-w-[100px] text-sm">2015 - 2019</div>
             <div class="flex flex-1 flex-col text-sm">
               <p>Bachelor of Science in Information Technology</p>
               <ul class="list-inside text-[#6c757d] text-balance">

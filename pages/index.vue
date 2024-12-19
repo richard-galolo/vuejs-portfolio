@@ -10,6 +10,8 @@
 					<div class="avatar ml-1">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
               <img
+                width="64"
+                height="64"
                 src="~/assets/img/profile.png"
                 alt="profile image"/>
 						</div>
@@ -179,9 +181,11 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
+                width="240"
+                height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto"/>
+                class="rounded-xl w-full h-auto" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Authentication API</h3>
@@ -234,6 +238,8 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
+                width="240"
+                height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
                 class="rounded-xl w-full h-auto" />
@@ -298,6 +304,8 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
+                width="240"
+                height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
                 class="rounded-xl w-full h-auto" />
@@ -354,6 +362,8 @@
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
             <figure class="p-4">
               <img
+                width="240"
+                height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
                 class="rounded-xl w-full h-auto" />
@@ -364,44 +374,31 @@
               <div class="flex gap-2 mb-2">
                 <!-- Chrome Icon -->
                 <svg
-                  width="16"
                   height="16"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path d="M16.0005 2.00394C16.0005 2.00394 24.2527 1.63495 28.6278 9.90002H15.2983C15.2983 9.90002 12.7828 9.81923 10.634 12.8601C10.0167 14.1364 9.3532 15.4511 10.0978 18.0422C9.02517 16.2315 4.40332 8.21246 4.40332 8.21246C4.40332 8.21246 7.66332 2.33069 16.0004 2.00394H16.0005Z" fill="#EF3F36"></path>
-                    <path d="M28.1994 22.986C28.1994 22.986 24.3915 30.2938 15.0244 29.9325C16.1818 27.9373 21.691 18.4305 21.691 18.4305C21.691 18.4305 23.022 16.3008 21.4518 12.9256C20.6531 11.7531 19.8391 10.5268 17.2157 9.87324C19.3261 9.85413 28.6045 9.87324 28.6045 9.87324C28.6045 9.87324 32.0805 15.6281 28.1994 22.986Z" fill="#FCD900"></path>
-                    <path d="M3.85931 23.0433C3.85931 23.0433 -0.588992 16.1044 4.41095 8.20068C5.56452 10.1959 11.0737 19.7027 11.0737 19.7027C11.0737 19.7027 12.262 21.917 15.9772 22.2475C17.3932 22.1437 18.8669 22.0553 20.7497 20.1217C19.7117 21.9516 15.0551 29.9476 15.0551 29.9476C15.0551 29.9476 8.31134 30.0706 3.8592 23.0433H3.85931Z" fill="#61BC5B"></path>
-                    <path d="M15.0205 30.0013L16.8955 22.2053C16.8955 22.2053 18.9557 22.0437 20.6842 20.1562C19.6115 22.0362 15.0205 30.0013 15.0205 30.0013Z" fill="#5AB055"></path>
-                    <path d="M9.71973 16.089C9.71973 12.6523 12.5168 9.86523 15.9658 9.86523C19.4148 9.86523 22.2119 12.6523 22.2119 16.089C22.2119 19.5257 19.4148 22.3127 15.9658 22.3127C12.5168 22.3089 9.71973 19.5257 9.71973 16.089Z" fill="white"></path>
-                    <path d="M10.7656 16.0892C10.7656 13.2292 13.0921 10.9072 15.9663 10.9072C18.8366 10.9072 21.1669 13.2254 21.1669 16.0892C21.1669 18.9494 18.8406 21.2714 15.9663 21.2714C13.0959 21.2714 10.7656 18.9494 10.7656 16.0892Z" fill="url(#paint0_linear_87_7098)"></path>
-                    <path d="M28.6007 9.87673L20.8808 12.1333C20.8808 12.1333 19.7157 10.4302 17.2119 9.87673C19.384 9.86515 28.6007 9.87673 28.6007 9.87673Z" fill="#EACA05"></path>
-                    <path d="M9.94735 17.7577C8.86313 15.8855 4.40332 8.2124 4.40332 8.2124L10.1209 13.8481C10.1209 13.8481 9.53441 15.0514 9.75441 16.7735L9.94724 17.7577H9.94735Z" fill="#DF3A32"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear_87_7098" x1="15.9661" y1="10.9804" x2="15.9661" y2="20.9594" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#86BBE5"></stop>
-                        <stop offset="1" stop-color="#1072BA"></stop>
-                      </linearGradient>
-                    </defs>
-                  </g>
-                </svg>
-                <!-- html5 Icon -->
-                <svg
                   width="16"
-                  height="16"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
-                    <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
-                    <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
-                  </g>
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 48 48">
+                  <defs>
+                    <linearGradient id="a" x1="3.2173" y1="15" x2="44.7812" y2="15" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#d93025" />
+                      <stop offset="1" stop-color="#ea4335" />
+                    </linearGradient>
+                    <linearGradient id="b" x1="20.7219" y1="47.6791" x2="41.5039" y2="11.6837" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#fcc934" />
+                      <stop offset="1" stop-color="#fbbc04" />
+                    </linearGradient>
+                    <linearGradient id="c" x1="26.5981" y1="46.5015" x2="5.8161" y2="10.506" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#1e8e3e" />
+                      <stop offset="1" stop-color="#34a853" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="24" cy="23.9947" r="12" style="fill:#fff" />
+                  <path d="M3.2154,36A24,24,0,1,0,12,3.2154,24,24,0,0,0,3.2154,36ZM34.3923,18A12,12,0,1,1,18,13.6077,12,12,0,0,1,34.3923,18Z" style="fill:none" />
+                  <path d="M24,12H44.7812a23.9939,23.9939,0,0,0-41.5639.0029L13.6079,30l.0093-.0024A11.9852,11.9852,0,0,1,24,12Z" style="fill:url(#a)" />
+                  <circle cx="24" cy="24" r="9.5" style="fill:#1a73e8" />
+                  <path d="M34.3913,30.0029,24.0007,48A23.994,23.994,0,0,0,44.78,12.0031H23.9989l-.0025.0093A11.985,11.985,0,0,1,34.3913,30.0029Z" style="fill:url(#b)" />
+                  <path d="M13.6086,30.0031,3.218,12.006A23.994,23.994,0,0,0,24.0025,48L34.3931,30.0029l-.0067-.0068a11.9852,11.9852,0,0,1-20.7778.007Z" style="fill:url(#c)" />
                 </svg>
               </div>
               <div class="card-actions">
