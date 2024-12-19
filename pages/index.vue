@@ -12,7 +12,7 @@
               <img
                 width="64"
                 height="64"
-                src="~/assets/img/profile.png"
+                src="~/assets/img/profile.webp"
                 alt="profile image"/>
 						</div>
 					</div>
@@ -50,7 +50,7 @@
 				<div class="grid grid-cols-2 md:grid-cols-2 gap-4">
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -65,7 +65,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -80,7 +80,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -95,7 +95,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -110,7 +110,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -125,7 +125,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -140,7 +140,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -153,7 +153,7 @@
           </div>
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
-            <div class="h-full w-auto aspect-square rounded-lg bg-custom-gray-dark-4 flex items-center justify-center group">
+            <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
                 class="fill-black stroke-black dark:fill-white dark:stroke-white"
                 width="24"
@@ -185,7 +185,8 @@
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto" />
+                class="rounded-xl w-full h-auto"
+                loading="lazy" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Authentication API</h3>
@@ -242,7 +243,8 @@
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto" />
+                class="rounded-xl w-full h-auto"
+                loading="lazy" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Stripe Payment</h3>
@@ -308,7 +310,8 @@
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto" />
+                class="rounded-xl w-full h-auto"
+                loading="lazy" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Web Scraper</h3>
@@ -366,7 +369,8 @@
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto" />
+                class="rounded-xl w-full h-auto"
+                loading="lazy" />
             </figure>
             <div class="card-body p-4 pt-0">
               <h3 class="text-sm font-medium">Chrome Extension Scraper</h3>

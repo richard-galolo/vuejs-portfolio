@@ -12,7 +12,7 @@
             <img
               width="64"
               height="64"
-              src="~/assets/img/profile.png"
+              src="~/assets/img/profile.webp"
               alt="profile image"/>
 						</div>
 					</div>
