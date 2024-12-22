@@ -1,5 +1,5 @@
 <template>
-  <div class="map-wrap">
+  <div class="map-wrap rounded-lg">
     <div
       id="map"
       class="map rounded-lg"
@@ -97,6 +97,8 @@ const initializeMap = async () => {
       scaleControl: false,
     });
 
+    removeControls();
+
     await new Promise(resolve => {
       map.value.on('load', () => {
         resolve();
@@ -136,8 +138,6 @@ const initializeMap = async () => {
       speed: 1,
       curve: 1,
     });
-
-    removeControls();
   } catch (error) {
     console.error('Error initializing map:', error);
   }
