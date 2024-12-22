@@ -10,18 +10,16 @@
       <Map />
 
       <!-- Introduction -->
-			<div class="flex gap-5">
-				<div>
-					<div class="avatar ml-1">
-						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
-              <img
-                width="64"
-                height="64"
-                src="~/assets/img/profile.webp"
-                alt="profile image"/>
-						</div>
-					</div>
-				</div>
+			<section class="flex gap-5">
+				<div class="avatar ml-1">
+          <div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
+            <img
+              width="64"
+              height="64"
+              src="~/assets/img/profile.webp"
+              alt="profile image"/>
+          </div>
+        </div>
 				<div class="flex flex-col justify-center">
 					<h1 class="text-xl font-semibold">
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
@@ -57,13 +55,13 @@
             </div>
           </a>
 				</div>
-			</div>
+			</section>
 
       <!-- Bio -->
       <h2 class="text-sm text-pretty mt-4">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
 
       <!-- Skills -->
-      <div class="mt-6">
+      <section class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
 					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
@@ -190,10 +188,10 @@
             </div>
           </div>
 				</div>
-			</div>
+			</section>
 
       <!-- Recent Projects -->
-      <div class="mt-6">
+      <section class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-2 gap-4">
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-lg">
@@ -445,10 +443,10 @@
             </div>
           </div>
 				</div>
-			</div>
+			</section>
 
       <!-- Hire Me -->
-      <div class="mt-6 bg-amber-100 dark:bg-black p-5 rounded-lg">
+      <section class="mt-6 bg-amber-100 dark:bg-black p-5 rounded-lg">
         <p class="mb-2 font-semibold text-sm">Hire Me!</p>
         <p class="text-sm font-light">
           I’m available for exciting opportunities in backend development and web applications. Let’s collaborate to create impactful solutions!
@@ -503,7 +501,7 @@
                 <span class="ml-2 hidden sm:block">Upwork</span>
             </a>
         </div>
-      </div>
+      </section>
     </main>
 
     <Footer />
