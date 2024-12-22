@@ -213,6 +213,7 @@ onUnmounted(() => {
   position: relative;
   width: 100%;
   height: 180px; /* Adjust as needed */
+  background-color: #f7f2e4;
 }
 
 .map {
