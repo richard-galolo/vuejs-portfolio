@@ -26,7 +26,6 @@
 				<div class="flex flex-col justify-center">
 					<h1 class="text-xl font-semibold">
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
-            <!-- <span class="text-xs font-light text-[#6c757d] ml-2"><Timer /></span> -->
 					</h1>
           <a
             href="mailto:richardgalolo@gmail.com"
@@ -62,11 +61,9 @@
 			</div>
 
       <!-- Bio -->
-      <div class="mt-6">
-				<h2 class="text-sm text-pretty">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
-			</div>
+      <h2 class="text-sm text-pretty mt-4">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
 
-      <!-- skills -->
+      <!-- Skills -->
       <div class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
@@ -196,7 +193,7 @@
 				</div>
 			</div>
 
-      <!-- Projects -->
+      <!-- Recent Projects -->
       <div class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-2 gap-4">

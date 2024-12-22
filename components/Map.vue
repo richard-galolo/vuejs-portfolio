@@ -14,7 +14,7 @@ const map = shallowRef(null);
 const isDarkMode = inject('isDarkMode');
 let timerContainer = null;
 
-const currentTime = ref(''); // Reactive state for the current time
+const currentTime = ref('--:-- -- GMT+8'); // Reactive state for the current time
 
 // Function to update the time
 const updateTime = () => {
