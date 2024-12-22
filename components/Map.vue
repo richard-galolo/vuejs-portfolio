@@ -58,7 +58,7 @@ const createPulsingDot = () => {
   const size = 100;
   const pulsingDot = {
     width: size,
-    height: 100,
+    height: size,
     data: new Uint8Array(size * size * 4),
     onAdd() {
       const canvas = document.createElement('canvas');
@@ -97,6 +97,8 @@ const createPulsingDot = () => {
 
 // Initialize map and add layers
 const initializeMap = () => {
+  config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
+
   map.value = new Map({
     container: 'map',
     style: isDarkMode.value ? MapStyle.STREETS.DARK : MapStyle.STREETS,
@@ -165,15 +167,37 @@ const initializeMap = () => {
 watch(isDarkMode, (darkMode) => {
   map.value.setStyle(darkMode ? MapStyle.STREETS.DARK : MapStyle.STREETS);
   map.value.once('styledata', () => {
-    createPulsingDot(); // Re-add the pulsing dot after style change
     createTimerOverlay(); // Ensure timer overlay is not removed
+    map.value.addImage('pulsing-dot', createPulsingDot(), { pixelRatio: 2 });
+    map.value.addSource('points', {
+      type: 'geojson',
+      data: {
+        type: 'FeatureCollection',
+        features: [{
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [123.85598078370096, 9.64026121471487], // Bohol coordinates
+          },
+          id: 'c102d02b-1ef6-4f3e-9a2a-dc07bc2357b2',
+          properties: { text: 'Bohol' },
+        }],
+      },
+    });
+
+    map.value.addLayer({
+      id: 'points',
+      type: 'symbol',
+      source: 'points',
+      layout: {
+        'icon-image': 'pulsing-dot',
+      },
+    });
   });
 });
 
 // Initialize timer and map
 onMounted(() => {
-  config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
-
   createTimerOverlay(); // Create timer overlay
   setInterval(updateTime, 1000); // Update time every second
   initializeMap(); // Initialize the map
