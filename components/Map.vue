@@ -31,6 +31,7 @@ const updateTime = () => {
   currentTime.value = `${formattedTime} GMT+8`; // Update the current time
 };
 
+// Function to create the timer overlay
 const createTimerOverlay = () => {
   if (!timerContainer) {
     timerContainer = document.createElement('div');
@@ -64,17 +65,15 @@ onMounted(async () => {
   // Set your MapTiler API key
   config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
 
-  const initialState = { lng: 120.98036, lat: 14.59045, zoom: 3 };
-
   var size = 100;
 
-  // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
+  // Implementation of CustomLayerInterface to draw a pulsing dot icon on the map
   var pulsingDot = {
     width: size,
     height: 100,
     data: new Uint8Array(size * size * 4),
 
-    // get rendering context for the map canvas when layer is added to the map
+    // Get rendering context for the map canvas when the layer is added to the map
     onAdd: function () {
       var canvas = document.createElement('canvas');
       canvas.width = this.width;
@@ -82,7 +81,7 @@ onMounted(async () => {
       this.context = canvas.getContext('2d');
     },
 
-    // called once before every frame where the icon will be used
+    // Called once before every frame where the icon will be used
     render: function () {
       var duration = 1000;
       var t = (performance.now() % duration) / duration;
@@ -91,14 +90,14 @@ onMounted(async () => {
       var outerRadius = (size / 2) * 0.7 * t + radius;
       var context = this.context;
 
-      // draw outer circle
+      // Draw outer circle
       context.clearRect(0, 0, this.width, this.height);
       context.beginPath();
       context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
       context.fillStyle = 'rgba(30, 162, 231,' + (1 - t) + ')'; // RGB 30, 162, 231 with fading effect
       context.fill();
 
-      // draw inner circle
+      // Draw inner circle
       context.beginPath();
       context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
       context.fillStyle = 'rgb(30, 162, 231)'; // Solid RGB 30, 162, 231
@@ -107,13 +106,13 @@ onMounted(async () => {
       context.fill();
       context.stroke();
 
-      // update this image's data with data from the canvas
+      // Update this image's data with data from the canvas
       this.data = context.getImageData(0, 0, this.width, this.height).data;
 
-      // continuously repaint the map, resulting in the smooth animation of the dot
+      // Continuously repaint the map, resulting in the smooth animation of the dot
       map.value.triggerRepaint();
 
-      // return `true` to let the map know that the image was updated
+      // Return `true` to let the map know that the image was updated
       return true;
     }
   };
@@ -127,7 +126,10 @@ onMounted(async () => {
       style: isDarkMode.value ? MapStyle.STREETS.DARK : MapStyle.STREETS,
       center: [122.9326, 12.8797], // Center of the Philippines
       zoom: 3,
-      navigationControl: false //disable the navigation control
+      speed: 1,
+      curve: 1,
+      navigationControl: false, // Disable the navigation control
+      attributionControl: false // Disable attribution control if not needed
     });
 
     map.value.on('load', () => {
@@ -150,7 +152,6 @@ onMounted(async () => {
       controls3.remove();
     }
   };
-
 
   const addPulsingDot = () => {
     map.value.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
@@ -182,21 +183,14 @@ onMounted(async () => {
   };
 
   const performFlyToAnimation = () => {
-    map.value.flyTo({
-      center: [122.9326, 12.8797], // Center of the Philippines
-      zoom: 3, // Start with a zoom level that shows the Philippines
-      speed: 1.5,
-      curve: 1,
-    });
-
     setTimeout(() => {
       map.value.flyTo({
         center: [123.85598078370096, 9.64026121471487], // Bohol
         zoom: 12,
-        speed: 1.5,
+        speed: 1,
         curve: 1,
       });
-    }, 1000);
+    }, 800);
   };
 
   // Initialize the map after the timer is added
@@ -207,7 +201,7 @@ onMounted(async () => {
     map.value.setStyle(darkMode ? MapStyle.STREETS.DARK : MapStyle.STREETS);
     map.value.once('styledata', () => {
       addPulsingDot(); // Re-add the pulsing dot after the style change
-      createTimerOverlay(); // Ensure timer overlay is not removed
+      createTimerOverlay(); // Ensure the timer overlay is not removed
     });
   });
 });
