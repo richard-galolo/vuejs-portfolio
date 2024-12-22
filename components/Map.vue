@@ -1,6 +1,16 @@
 <template>
   <div class="map-wrap">
-    <div id="map" class="map rounded-lg" ref="mapContainer"></div>
+    <div
+      id="map"
+      class="map rounded-lg"
+      ref="mapContainer">
+      <div
+        id="timer-overlay"
+        v-if="currentTime"
+        class="timer-overlay">
+        {{ currentTime }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -12,7 +22,6 @@ import "@maptiler/sdk/dist/maptiler-sdk.css";
 const mapContainer = shallowRef(null);
 const map = shallowRef(null);
 const isDarkMode = inject('isDarkMode');
-let timerContainer = null;
 
 const currentTime = ref('--:-- -- GMT+8'); // Reactive state for the current time
 
@@ -26,31 +35,6 @@ const updateTime = () => {
     hour12: true,
   };
   currentTime.value = `${now.toLocaleTimeString('en-US', options)} GMT+8`; // Update the current time
-};
-
-// Create the timer overlay
-const createTimerOverlay = () => {
-  if (!timerContainer) {
-    timerContainer = document.createElement('div');
-    timerContainer.id = 'timer-overlay';
-    Object.assign(timerContainer.style, {
-      position: 'absolute',
-      top: '10px',
-      left: '10px',
-      padding: '5px 10px',
-      background: 'rgba(0, 0, 0, 0.5)',
-      color: 'white',
-      borderRadius: '0.5rem',
-      zIndex: '10',
-    });
-    timerContainer.textContent = currentTime.value;
-    document.getElementById('map').appendChild(timerContainer);
-
-    // Update the timer every second
-    setInterval(() => {
-      timerContainer.textContent = currentTime.value;
-    }, 1000);
-  }
 };
 
 // Create pulsing dot layer
@@ -167,7 +151,6 @@ const initializeMap = () => {
 watch(isDarkMode, (darkMode) => {
   map.value.setStyle(darkMode ? MapStyle.STREETS.DARK : MapStyle.STREETS);
   map.value.once('styledata', () => {
-    createTimerOverlay(); // Ensure timer overlay is not removed
     map.value.addImage('pulsing-dot', createPulsingDot(), { pixelRatio: 2 });
     map.value.addSource('points', {
       type: 'geojson',
@@ -198,7 +181,6 @@ watch(isDarkMode, (darkMode) => {
 
 // Initialize timer and map
 onMounted(() => {
-  createTimerOverlay(); // Create timer overlay
   setInterval(updateTime, 1000); // Update time every second
   initializeMap(); // Initialize the map
 });
@@ -213,7 +195,7 @@ onUnmounted(() => {
   position: relative;
   width: 100%;
   height: 180px; /* Adjust as needed */
-  background-color: #f7f2e4;
+  background-color: #85cbfa;
 }
 
 .map {
@@ -222,13 +204,15 @@ onUnmounted(() => {
   height: 100%;
 }
 
-#timer-overlay {
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
+.timer-overlay {
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 1000;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 0.5rem;
+  z-index: 10;
+  font: 12px / 20px Helvetica Neue, Arial, Helvetica, sans-serif;
 }
 </style>
