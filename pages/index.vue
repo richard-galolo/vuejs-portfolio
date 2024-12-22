@@ -1,3 +1,7 @@
+<script setup>
+  const hovering = ref(true);
+</script>
+
 <template>
   <div class="relative mx-auto max-w-xl min-h-screen flex flex-col px-4">
     <!-- Main Content -->
@@ -22,18 +26,34 @@
 						Hi, I'm Richard<span class="ml-1 inline-block origin-bottom-right hover:animate-waving-hand cursor-default">👋</span>
             <!-- <span class="text-xs font-light text-[#6c757d] ml-2"><Timer /></span> -->
 					</h1>
-          <a href="mailto:richardgalolo@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex text-[#6c757d] hover:underline decoration-dotted">
-            <div class="flex gap-1 text-sm text-[#6c757d]">
-                <svg
+          <a
+            href="mailto:richardgalolo@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex text-[#6c757d] hover:underline decoration-dotted"
+            @mouseover="hovering = false"
+            @mouseout="hovering = true"
+          >
+            <div
+              class="flex gap-1 text-sm text-[#6c757d]">
+              <!-- Dynamic SVG -->
+              <svg
+                v-if="hovering"
                 class="fill-[#22c55e]"
                 width="8"
                 viewBox="0 0 6 6"
                 aria-hidden="true">
                 <circle r="3" cx="3" cy="3"></circle>
-              </svg> Available for work
+              </svg>
+              <svg
+                v-else
+                class="fill-[#0066b9]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                viewBox="0 0 512 512">
+                <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+              </svg>
+              <span>{{ hovering ? "Available for work" : "Hire Me" }}</span>
             </div>
           </a>
 				</div>
