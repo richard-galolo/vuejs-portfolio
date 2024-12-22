@@ -9,7 +9,9 @@
       <Navbar />
 
       <!-- Introduction -->
-			<div class="flex gap-5 mt-6">
+      <Map />
+
+			<div class="flex gap-5">
 				<div>
 					<div class="avatar ml-1">
 						<div class="ring-[#121212] dark:ring-white ring-offset-base-100 w-16 rounded-full ring ring-offset-2">
@@ -68,7 +70,7 @@
       <div class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -83,7 +85,7 @@
               <p class="text-sm md:text-md">Laravel</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -98,7 +100,7 @@
               <p class="text-sm md:text-md">PHP</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -113,7 +115,7 @@
               <p class="text-sm md:text-md">HTML5</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -128,7 +130,7 @@
               <p class="text-sm md:text-md">CSS</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -143,7 +145,7 @@
               <p class="text-sm md:text-md">GIT</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -158,7 +160,7 @@
               <p class="text-sm md:text-md">Node.js</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -171,7 +173,7 @@
               <p class="text-sm md:text-md">MySQL</p>
             </div>
           </div>
-					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-xl p-3 flex flex-row space-x-4 transition-colors duration-150"
+					<div class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4 transition-colors duration-150"
             style="transform: none;">
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
               <svg
@@ -198,14 +200,14 @@
       <div class="mt-6">
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-2 gap-4">
-          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-lg">
             <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto"
+                class="rounded-lg w-full h-auto"
                 loading="lazy" />
             </figure>
             <div class="card-body p-4">
@@ -256,14 +258,14 @@
               </div>
             </div>
           </div>
-          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-lg">
             <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto"
+                class="rounded-lg w-full h-auto"
                 loading="lazy" />
             </figure>
             <div class="card-body p-4">
@@ -323,14 +325,14 @@
               </div>
             </div>
           </div>
-          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-lg">
             <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto"
+                class="rounded-lg w-full h-auto"
                 loading="lazy" />
             </figure>
             <div class="card-body p-4">
@@ -382,14 +384,14 @@
               </div>
             </div>
           </div>
-          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
+          <div class="card border border-slate-300 dark:border-[#6c757d] rounded-lg">
             <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
                 src="@/assets/svg/empty.svg"
                 alt="empty image"
-                class="rounded-xl w-full h-auto"
+                class="rounded-lg w-full h-auto"
                 loading="lazy" />
             </figure>
             <div class="card-body p-4">
@@ -450,7 +452,7 @@
 			</div>
 
       <!-- Hire Me -->
-      <div class="mt-6 bg-amber-100 dark:bg-black p-5 rounded-xl">
+      <div class="mt-6 bg-amber-100 dark:bg-black p-5 rounded-lg">
         <p class="mb-2 font-semibold text-sm">Hire Me!</p>
         <p class="text-sm font-light">
           I’m available for exciting opportunities in backend development and web applications. Let’s collaborate to create impactful solutions!

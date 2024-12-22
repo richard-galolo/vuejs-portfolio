@@ -1,26 +1,7 @@
 <script setup>
-  import { ref, watch, onMounted } from 'vue';
-  import Timer from './components/Timer.vue';
+  import { inject } from 'vue';
 
-  // Reactive state for dark mode
-  const isDarkMode = ref(false);
-
-  // Function to update the theme on <html> and localStorage
-  const updateTheme = (value) => {
-    const theme = value ? 'dark' : 'light';
-    document.querySelector('html').setAttribute('data-theme', theme);
-    localStorage.setItem('darkMode', JSON.stringify(value));
-  };
-
-  // Watch for changes in `isDarkMode` and update the theme
-  watch(isDarkMode, updateTheme);
-
-  // Set initial dark mode state on mount
-  onMounted(() => {
-    const storedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
-    isDarkMode.value = storedDarkMode ?? false;
-    updateTheme(isDarkMode.value);
-  });
+  const isDarkMode = inject('isDarkMode');
 </script>
 
 <template>
