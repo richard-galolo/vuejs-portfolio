@@ -1,3 +1,49 @@
+<script setup>
+  const jobs = [
+    {
+      id: 1,
+      date: '2021 - Present',
+      position: 'Web Developer',
+      company: 'Freelance',
+      location: 'Remote',
+      tasks: [
+        'Developed fully-functional web applications from scratch, beginning with the creation of database schema diagrams to guide the development process.',
+        'Conducted comprehensive website testing and debugging to ensure optimal functionality across a range of browsers and devices.',
+        'Collaborated closely with cross-functional teams to identify and prioritize website features and functionality based on business requirements and user needs.',
+        'Maintained and updated existing websites with fresh content, new features, and enhanced functionality to improve user engagement.',
+        'Integrated third-party applications and APIs into websites to enhance functionality.',
+        'Utilized a range of APIs including Payment Gateways (Stripe, Paypal, Dragonpay), Cloud Storage (AWS S3, Azure Blob, Digital Ocean Spaces, Wazabi, BunnyCDN, Box), Mail/SMS Drivers (Sendgrid, Mailchimp, Twillio, Movider), Error Logging (Sentry, Rollbar, Papertrails, Slack), and CMS (Freshdesk).',
+        'Utilized tools such as Bitbucket, Gitlab, Github, Codebase, JIRA, MS Teams, Slack, Sequel Pro, Postman, Forge, and Digital Ocean.',
+      ],
+    },
+    {
+      id: 2,
+      date: '2020 - 2021',
+      position: 'Laravel Developer',
+      company: 'TBL Technerds',
+      location: 'Remote',
+      tasks: [
+        'Managed both backend and web administration for web and mobile applications, optimizing performance and scalability.',
+        'Translated mockup designs into responsive HTML/CSS code, ensuring accuracy and attention to detail.',
+        'Integrated Stripe and PayPal APIs for secure and reliable payment processing, improving user satisfaction and financial efficiency.',
+        'Utilized tools such as Bitbucket, Cpanel, Trello, Slack, VSCode, and TimeDoctor.',
+      ],
+    },
+    {
+      id: 3,
+      date: '2019 - 2020',
+      position: 'Web Developer',
+      company: 'D’Courtyard Technology Hub',
+      location: 'Office',
+      tasks: [
+        'Developed and maintained the administrator side of a mobile application by implementing new features and ensuring optimal functionality.',
+        'Collaborated with team members in weekly meetings to discuss project progress, identify challenges, and develop solutions.',
+        'Utilized tools such as Bitbucket, JIRA, Sequel Pro, VSCode, and Digital Ocean.',
+      ],
+    },
+  ];
+</script>
+
 <template>
   <div class="relative mx-auto max-w-xl min-h-screen flex flex-col px-4">
     <!-- Main Content -->
@@ -37,71 +83,21 @@
       <div class="mt-6">
         <p class="mb-2 font-semibold text-sm">Work Experience</p>
         <div class="flex flex-col gap-6">
-          <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">2021 - Present</div>
+          <div v-for="job in jobs"
+            :key="job.id"
+            class="flex">
+            <div class="mr-6 w-full max-w-[100px] text-sm">{{ job.date }}</div>
             <div class="flex flex-1 flex-col text-sm">
-              <p>Web Developer at Freelance</p>
-              <p>Remote</p>
+              <p>{{ job.position }} at {{ job.company }}</p>
+              <p>{{ job.location }}</p>
               <ul class="list-inside text-[#6c757d] text-balance leading-5">
-                  <li class="mt-2">
-                    &#8226; Developed fully-functional web applications from scratch, beginning with the creation of database schema diagrams to guide the development process.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Conducted comprehensive website testing and debugging to ensure optimal functionality across a range of browsers and devices.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Collaborated closely with cross-functional teams to identify and prioritize website features and functionality based on business requirements and user needs.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Maintained and updated existing websites with fresh content, new features, and enhanced functionality to improve user engagement.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Integrating third-party applications and APIs into websites to enhance functionality.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Utilized a range of APIs including Payment Gateways (Stripe, Paypal, Dragonpay), Cloud Storage (AWS S3, Azure Blob, Digital Ocean Spaces, Wazabi, BunnyCDN, Box), Mail/SMS Drivers (Sendgrid, Mailchimp, Twillio, Movider), Error Logging (Sentry, Rollbar, Papertrails, Slack), and CMS (Freshdesk).
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Utilized tools such as Bitbucket, Gitlab, Github, Codebase, JIRA, MS Teams, Slack, Sequel Pro, Postman, Forge, and Digital Ocean.
-                  </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">2020 - 2021</div>
-            <div class="flex flex-1 flex-col text-sm">
-              <p >Laravel Developer at TBL Technerds</p>
-              <p>Remote</p>
-              <ul class="list-inside text-[#6c757d] text-balance leading-5">
-                  <li class="mt-2">
-                    &#8226; Managed both backend and web administration for web and mobile applications, optimizing performance and scalability.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Translated mockup designs into responsive HTML/CSS code, ensuring accuracy and attention to detail.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Integrated Stripe and PayPal APIs for secure and reliable payment processing, improving user satisfaction and financial efficiency.
-                  </li>
-                  <li class="mt-2">
-                    &#8226; Utilized tools such as Bitbucket, Cpanel, Trello, Slack, VSCode, and TimeDoctor.
-                  </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">2019 - 2020</div>
-            <div class="flex flex-1 flex-col text-sm">
-              <p>Web Developer at D’Courtyard Technology Hub</p>
-              <p>Office</p>
-              <ul class="list-inside text-[#6c757d] text-balance leading-5">
-                <li class="mt-2">
-                  &#8226; Developed and maintained the administrator side of a mobile application by implementing new features and ensuring optimal functionality.
-                </li>
-                  <li class="mt-2">
-                  &#8226; Collaborated with team members in weekly meetings to discuss project progress, identify challenges, and develop solutions.
-                </li>
-                <li class="mt-2">
-                  &#8226; Utilized tools such as Bitbucket, JIRA, Sequel Pro, VSCode and Digital Ocean.
+                <li v-for="(task, index) in job.tasks"
+                  :key="index"
+                  class="flex gap-1 mt-2">
+                  <span>&#8226;</span>
+                  <p class="text-pretty">
+                    {{ task }}
+                  </p>
                 </li>
               </ul>
             </div>
@@ -114,7 +110,7 @@
         <div class="mb-2 font-semibold text-sm">Education</div>
         <div class="flex flex-col gap-6">
           <div class="flex">
-            <div class="mr-8 w-full max-w-[100px] text-sm">2015 - 2019</div>
+            <div class="mr-6 w-full max-w-[100px] text-sm">2015 - 2019</div>
             <div class="flex flex-1 flex-col text-sm">
               <p>Bachelor of Science in Information Technology</p>
               <ul class="list-inside text-[#6c757d] text-balance">
@@ -135,12 +131,12 @@
         <div class="mb-2 font-semibold text-sm">Contact</div>
         <div class="flex flex-col gap-6">
           <div class="flex text-sm">
-            <div class="mr-8 w-full max-w-[100px]">Email</div>
+            <div class="mr-6 w-full max-w-[100px]">Email</div>
             <div class="flex flex-1 flex-col">
               <a href="mailto:richardgalolo@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-[#6c757d] hover:underline">
+                class="inline-flex text-[#6c757d] hover:underline decoration-dotted">
                 richardgalolo@gmail.com
                 <svg
                   width="12"
@@ -154,12 +150,12 @@
             </div>
           </div>
           <div class="flex text-sm">
-            <div class="mr-8 w-full max-w-[100px]">LinkedIn</div>
+            <div class="mr-6 w-full max-w-[100px]">LinkedIn</div>
             <div class="flex flex-1 flex-col">
               <a href="https://www.linkedin.com/in/richard-galolo-b7a4ab180/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-[#6c757d] hover:underline">
+                class="inline-flex text-[#6c757d] hover:underline decoration-dotted">
                 richard-galolo
                 <svg
                   width="12"

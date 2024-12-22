@@ -179,7 +179,7 @@
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-2 gap-4">
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
-            <figure class="p-4">
+            <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
@@ -188,7 +188,7 @@
                 class="rounded-xl w-full h-auto"
                 loading="lazy" />
             </figure>
-            <div class="card-body p-4 pt-0">
+            <div class="card-body p-4">
               <h3 class="text-sm font-medium">Authentication API</h3>
               <p class="text-sm text-[#6c757d] mb-2">Created a user authentication API package compatible with any Laravel project.</p>
               <div class="flex gap-2 mb-2">
@@ -228,7 +228,7 @@
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
-                    class="md:mr-2 size-4">
+                    class="mr-2 size-4">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
                   </svg>
                   <span class="hidden sm:block">Source</span>
@@ -237,7 +237,7 @@
             </div>
           </div>
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
-            <figure class="p-4">
+            <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
@@ -246,7 +246,7 @@
                 class="rounded-xl w-full h-auto"
                 loading="lazy" />
             </figure>
-            <div class="card-body p-4 pt-0">
+            <div class="card-body p-4">
               <h3 class="text-sm font-medium">Stripe Payment</h3>
               <p class="text-sm text-[#6c757d] mb-2">Developed a card management and checkout API using Laravel.</p>
               <div class="flex gap-2 mb-2">
@@ -295,7 +295,7 @@
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
-                    class="md:mr-2 size-4">
+                    class="mr-2 size-4">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
                   </svg>
                   <span class="hidden sm:block">Source</span>
@@ -304,7 +304,7 @@
             </div>
           </div>
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
-            <figure class="p-4">
+            <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
@@ -313,7 +313,7 @@
                 class="rounded-xl w-full h-auto"
                 loading="lazy" />
             </figure>
-            <div class="card-body p-4 pt-0">
+            <div class="card-body p-4">
               <h3 class="text-sm font-medium">Web Scraper</h3>
               <p class="text-sm text-[#6c757d] mb-2">Built a web scraper in Node.js for extracting data from e-commerce websites.</p>
               <div class="flex gap-2 mb-2">
@@ -354,7 +354,7 @@
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
-                    class="md:mr-2 size-4">
+                    class="mr-2 size-4">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
                   </svg>
                   <span class="hidden sm:block">Source</span>
@@ -363,7 +363,7 @@
             </div>
           </div>
           <div class="card border border-slate-300 dark:border-[#6c757d] rounded-xl">
-            <figure class="p-4">
+            <figure class="p-4" style="display: none;">
               <img
                 width="240"
                 height="240"
@@ -372,7 +372,7 @@
                 class="rounded-xl w-full h-auto"
                 loading="lazy" />
             </figure>
-            <div class="card-body p-4 pt-0">
+            <div class="card-body p-4">
               <h3 class="text-sm font-medium">Chrome Extension Scraper</h3>
               <p class="text-sm text-[#6c757d] mb-2">Developed a simple chrome extension for scraping e-commerce websites.</p>
               <div class="flex gap-2 mb-2">
@@ -418,7 +418,7 @@
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
-                    class="md:mr-2 size-4">
+                    class="mr-2 size-4">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z"></path>
                   </svg>
                   <span class="hidden sm:block">Source</span>
@@ -447,7 +447,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  class="md:mr-2 size-4">
+                  class="mr-2 size-4">
                   <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
                 </svg>
                 <span class="hidden sm:block ">Email</span>
@@ -463,7 +463,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
                   fill="currentColor"
-                  class="md:mr-2 size-4">
+                  class="mr-2 size-4">
                   <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                 </svg>
                 <span class="hidden sm:block">LinkedIn</span>
@@ -479,7 +479,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 641 512"
                   fill="currentColor"
-                  class="md:mr-2 size-4">
+                  class="mr-2 size-4">
                   <path d="M494.7 295.6c-50.3 0-83.5-38.9-92.8-53.9c11.9-95.3 46.8-125.4 92.8-125.4c45.5 0 80.9 36.4 80.9 89.7s-35.4 89.7-80.9 89.7zm0-237.8c-81.9 0-127.8 53.4-141 108.4c-14.9-28-25.9-65.5-34.5-100.3H206v141c0 51.1-23.3 89-68.8 89s-71.6-37.8-71.6-89l.5-141H.8v141c0 41.1 13.3 78.4 37.6 105.1c25 27.5 59.2 41.8 98.8 41.8c78.8 0 133.8-60.4 133.8-146.9V112.1c8.2 31.2 27.8 91.1 65.3 143.6l-35 199.4h66.4l23.1-141.3c7.6 6.3 15.7 12 24.2 17c22.2 14 47.7 21.9 73.9 22.8c0 0 4 .2 6.1 .2c81.2 0 145.9-62.9 145.9-147.8s-64.8-148.1-146-148.1z" />
                 </svg>
                 <span class="hidden sm:block">Upwork</span>
