@@ -25,8 +25,8 @@ const isDarkMode = inject('isDarkMode');
 
 const currentTime = ref('--:-- -- GMT+8'); // Reactive state for the current time
 
-// Function to update the time
-const updateTime = () => {
+// Function to update the time asynchronously
+const updateTime = async () => {
   const now = new Date();
   const options = {
     timeZone: 'Asia/Manila',
@@ -79,22 +79,30 @@ const createPulsingDot = () => {
   return pulsingDot;
 };
 
-// Initialize map and add layers
-const initializeMap = () => {
+// Initialize map and add layers asynchronously
+const initializeMap = async () => {
   config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
 
-  map.value = new Map({
-    container: 'map',
-    style: isDarkMode.value ? MapStyle.STREETS.DARK : MapStyle.STREETS,
-    center: [122.9326, 12.8797],
-    zoom: 3,
-    speed: 1,
-    curve: 1,
-    navigationControl: false,
-    attributionControl: false,
-  });
+  try {
+    map.value = new Map({
+      container: 'map',
+      style: isDarkMode.value ? MapStyle.BASIC.DARK : MapStyle.BASIC,
+      center: [122.9326, 12.8797],
+      zoom: 3,
+      speed: 1,
+      curve: 1,
+      navigationControl: false,
+      geolocateControl: false,
+      terrainControl: false,
+      scaleControl: false,
+    });
 
-  map.value.on('load', () => {
+    await new Promise(resolve => {
+      map.value.on('load', () => {
+        resolve();
+      });
+    });
+
     map.value.addImage('pulsing-dot', createPulsingDot(), { pixelRatio: 2 });
     map.value.addSource('points', {
       type: 'geojson',
@@ -128,27 +136,29 @@ const initializeMap = () => {
       speed: 1,
       curve: 1,
     });
-  });
 
-  // Remove unnecessary map controls
-  const removeControls = () => {
-    const controls = [
-      '.maplibregl-ctrl-bottom-left',
-      '.maplibregl-ctrl-bottom-right',
-      '.maplibregl-ctrl-top-right',
-    ];
-    controls.forEach(control => {
-      const controlElem = document.querySelector(control);
-      if (controlElem) {
-        controlElem.remove();
-      }
-    });
-  };
-  removeControls();
+    removeControls();
+  } catch (error) {
+    console.error('Error initializing map:', error);
+  }
 };
 
-// Watch for dark mode changes
-watch(isDarkMode, (darkMode) => {
+// Remove unnecessary map controls
+const removeControls = () => {
+  const controls = [
+    '.maplibregl-ctrl-bottom-left',
+    '.maplibregl-ctrl-bottom-right',
+  ];
+  controls.forEach(control => {
+    const controlElem = document.querySelector(control);
+    if (controlElem) {
+      controlElem.remove();
+    }
+  });
+};
+
+// Watch for dark mode changes asynchronously
+watch(isDarkMode, async (darkMode) => {
   map.value.setStyle(darkMode ? MapStyle.STREETS.DARK : MapStyle.STREETS);
   map.value.once('styledata', () => {
     map.value.addImage('pulsing-dot', createPulsingDot(), { pixelRatio: 2 });
@@ -180,9 +190,9 @@ watch(isDarkMode, (darkMode) => {
 });
 
 // Initialize timer and map
-onMounted(() => {
+onMounted(async () => {
   setInterval(updateTime, 1000); // Update time every second
-  initializeMap(); // Initialize the map
+  await initializeMap(); // Initialize the map asynchronously
 });
 
 onUnmounted(() => {
@@ -195,13 +205,14 @@ onUnmounted(() => {
   position: relative;
   width: 100%;
   height: 180px; /* Adjust as needed */
-  background-color: #85cbfa;
+  background-color: #e5e5d7;
 }
 
 .map {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: #e5e5d7;
 }
 
 .timer-overlay {
