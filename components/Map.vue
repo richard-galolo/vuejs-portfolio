@@ -88,7 +88,7 @@ const initializeMap = async () => {
       container: 'map',
       style: isDarkMode.value ? MapStyle.BASIC.DARK : MapStyle.BASIC,
       center: [122.9326, 12.8797],
-      zoom: 3,
+      zoom: 2,
       speed: 1,
       curve: 1,
       navigationControl: false,
@@ -121,7 +121,6 @@ const initializeMap = async () => {
         }],
       },
     });
-
     map.value.addLayer({
       id: 'points',
       type: 'symbol',
@@ -134,7 +133,7 @@ const initializeMap = async () => {
     // Fly to Bohol after map load
     map.value.flyTo({
       center: [123.85598078370096, 9.64026121471487],
-      zoom: 12,
+      zoom: 10,
       speed: 1,
       curve: 1,
     });

@@ -7,10 +7,9 @@
     <!-- Main Content -->
     <main class="flex-grow">
       <Navbar />
-
-      <!-- Introduction -->
       <Map />
 
+      <!-- Introduction -->
 			<div class="flex gap-5">
 				<div>
 					<div class="avatar ml-1">
