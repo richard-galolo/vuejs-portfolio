@@ -89,12 +89,8 @@ const initializeMap = async () => {
       style: isDarkMode.value ? MapStyle.BASIC.DARK : MapStyle.BASIC,
       center: [122.9326, 12.8797],
       zoom: 2,
-      speed: 1,
-      curve: 1,
       navigationControl: false,
       geolocateControl: false,
-      terrainControl: false,
-      scaleControl: false,
     });
 
     removeControls();
@@ -190,7 +186,8 @@ watch(isDarkMode, async (darkMode) => {
 
 // Initialize timer and map
 onMounted(async () => {
-  setInterval(updateTime, 1000); // Update time every second
+  updateTime();
+  setInterval(updateTime, 3000); // Update time every second
   await initializeMap(); // Initialize the map asynchronously
 });
 
