@@ -85,12 +85,10 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View image">
-            <figure>
             <img
               src="/img/ticket-flow-diagram.png"
               lazy="loading"
               alt="Ticket Flow Diagram" />
-            </figure>
           </a>
         </div>
 

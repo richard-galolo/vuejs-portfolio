@@ -12,28 +12,24 @@
       <section>
         <h1 class="text-2xl font-semibold">My Blog</h1>
         <ul class="mt-6">
-          <li class="text-lg font-light">
+          <li class="text-sm">
             <NuxtLink to="/blogs/ticket-flow"
               class="hover:underline decoration-dotted">
-              Ticket Flow
+              Simplifying Ticket Flow for Efficient Project Development
             </NuxtLink>
-            <p class="font-light text-sm text-[#6c757d] mt-2">December 23, 2024</p>
+            <p class="font-light text-sm text-[#6c757d] mt-1">December 23, 2024</p>
           </li>
-          <li class="text-lg font-light mt-5 text-[#6c757d]">
-            Git Flow
-            <p class="font-light text-sm text-[#6c757d] mt-2">Coming Soon...</p>
+          <li class="text-sm mt-5 text-[#6c757d]">
+            Essential Git Commands: Simplify Version Control
+            <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
           </li>
-          <li class="text-lg font-light mt-5 text-[#6c757d]">
-            How To Install LAMP Stack on Ubuntu
-            <p class="font-light text-sm text-[#6c757d] mt-2">Coming Soon...</p>
+          <li class="text-sm mt-5 text-[#6c757d]">
+            Building Your First Laravel Package: A Step-by-Step Guide
+            <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
           </li>
-          <li class="text-lg font-light mt-5 text-[#6c757d]">
-            Creating Your First Laravel Package
-            <p class="font-light text-sm text-[#6c757d] mt-2">Coming Soon...</p>
-          </li>
-          <li class="text-lg font-light mt-5 text-[#6c757d]">
-            Laravel + Nuxt.js: A Powerful Combination
-            <p class="font-light text-sm text-[#6c757d] mt-2">Coming Soon...</p>
+          <li class="text-sm mt-5 text-[#6c757d]">
+            Laravel, Domains, and Web Hosting: Everything You Need to Know
+            <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
           </li>
         </ul>
       </section>
