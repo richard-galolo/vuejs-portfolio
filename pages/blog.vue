@@ -24,15 +24,19 @@
             <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
           </li>
           <li class="text-sm text-[#6c757d] cursor-not-allowed">
-            Building Your First Laravel Package: A Step-by-Step Guide
-            <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
-          </li>
-          <li class="text-sm text-[#6c757d] cursor-not-allowed">
             Laravel, Domains, and Web Hosting: Everything You Need to Know
             <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
           </li>
           <li class="text-sm text-[#6c757d] cursor-not-allowed">
             Laravel, GitLab CI/CD, Docker
+            <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
+          </li>
+          <li class="text-sm text-[#6c757d] cursor-not-allowed">
+            Building Your First Laravel Package: A Step-by-Step Guide
+            <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
+          </li>
+          <li class="text-sm text-[#6c757d] cursor-not-allowed">
+            Laravel API Backend + Nuxt.js Frontend CRUD
             <p class="font-light text-sm text-[#6c757d] mt-1">Coming Soon...</p>
           </li>
         </ul>
