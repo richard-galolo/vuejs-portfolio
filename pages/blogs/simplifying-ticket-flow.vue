@@ -1,4 +1,12 @@
 <script setup>
+  useSeoMeta({
+    title: 'Simplifying Ticket Flow for Efficient Project Development - Richard Galolo',
+    ogTitle: 'Simplifying Ticket Flow for Efficient Project Development - Richard Galolo',
+    description: 'Effective project management begins with a structured ticket flow. This process helps keep development on track, reduces bottlenecks, and ensures your team delivers high-quality products on time.',
+    ogDescription: 'Effective project management begins with a structured ticket flow. This process helps keep development on track, reduces bottlenecks, and ensures your team delivers high-quality products on time.',
+    ogImage: '/img/ticket-flow-diagram.png',
+  });
+
   // Define the stages and their descriptions
   const stages = [
     {
@@ -58,7 +66,7 @@
               Blog
             </NuxtLink>
           </li>
-          <li>Ticket Flow</li>
+          <li>Simplifying Ticket Flow</li>
         </ul>
       </div>
 

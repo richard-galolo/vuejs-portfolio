@@ -13,7 +13,7 @@
         <h1 class="text-2xl font-semibold">My Blog</h1>
         <ul class="mt-6">
           <li class="text-sm">
-            <NuxtLink to="/blogs/ticket-flow"
+            <NuxtLink to="/blogs/simplifying-ticket-flow"
               class="hover:underline decoration-dotted">
               Simplifying Ticket Flow for Efficient Project Development
             </NuxtLink>
