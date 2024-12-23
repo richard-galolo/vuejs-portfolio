@@ -16,8 +16,8 @@
 
 <script setup>
 import { shallowRef, onMounted, onUnmounted, watch, inject, ref } from 'vue';
-// import { Map, MapStyle, config } from '@maptiler/sdk';
-// import "@maptiler/sdk/dist/maptiler-sdk.css";
+import { Map, MapStyle, config } from '@maptiler/sdk';
+import "@maptiler/sdk/dist/maptiler-sdk.css";
 
 const mapContainer = shallowRef(null);
 const map = shallowRef(null);
@@ -81,10 +81,6 @@ const createPulsingDot = () => {
 
 // Initialize map and add layers asynchronously
 const initializeMap = async () => {
-    // Lazily load the MapTiler SDK
-    const { Map, MapStyle, config } = await import('@maptiler/sdk');
-    import("@maptiler/sdk/dist/maptiler-sdk.css");
-
     config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
 
   try {
@@ -92,7 +88,7 @@ const initializeMap = async () => {
       container: 'map',
       style: isDarkMode.value ? MapStyle.BASIC.DARK : MapStyle.BASIC,
       center: [122.9326, 12.8797],
-      zoom: 2,
+      zoom: 3,
       navigationControl: false,
       geolocateControl: false,
     });
@@ -158,7 +154,7 @@ const removeControls = () => {
 
 // Watch for dark mode changes asynchronously
 watch(isDarkMode, async (darkMode) => {
-  map.value.setStyle(darkMode ? MapStyle.STREETS.DARK : MapStyle.STREETS);
+  map.value.setStyle(darkMode ? MapStyle.BASIC.DARK : MapStyle.BASIC);
   map.value.once('styledata', () => {
     map.value.addImage('pulsing-dot', createPulsingDot(), { pixelRatio: 2 });
     map.value.addSource('points', {

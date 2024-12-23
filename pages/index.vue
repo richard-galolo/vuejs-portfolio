@@ -58,7 +58,7 @@
 			</section>
 
       <!-- Bio -->
-      <h2 class="text-sm text-pretty mt-4">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
+      <h2 class="text-sm mt-4">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
 
       <!-- Skills -->
       <section class="mt-6">
