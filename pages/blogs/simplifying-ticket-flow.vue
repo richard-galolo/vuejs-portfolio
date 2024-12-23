@@ -5,6 +5,7 @@
     description: 'Effective project management begins with a structured ticket flow. This process helps keep development on track, reduces bottlenecks, and ensures your team delivers high-quality products on time.',
     ogDescription: 'Effective project management begins with a structured ticket flow. This process helps keep development on track, reduces bottlenecks, and ensures your team delivers high-quality products on time.',
     ogImage: '/img/ticket-flow-diagram.png',
+    keywords: 'ticket flow, project management, development workflow, reduce bottlenecks, efficient project development, task management, team collaboration, software development, project tracking, agile development'
   });
 
   // Define the stages and their descriptions
@@ -26,8 +27,8 @@
     },
     {
       id: 'awaiting-bundle',
-      title: 'AWAITING BUNDLE: Preparing for Launch',
-      content: 'After the development phase, tasks are often grouped into bundles. The AWAITING BUNDLE stage ensures that the release is streamlined. It’s like preparing for a product launch, where everything is packaged and ready for deployment in a smooth, coordinated release.'
+      title: 'AWAITING BUNDLE: Waiting for Final Components',
+      content: 'After the development phase, tasks are often grouped into bundles. The AWAITING BUNDLE stage ensures that all necessary components are in place before moving to QA. It’s not about preparing for a product launch yet, but rather ensuring everything is coordinated and ready for testing once the final pieces of the bundle are complete.'
     },
     {
       id: 'quality-assurance',
@@ -74,7 +75,8 @@
       <section class="mt-4">
         <h1 class="text-2xl font-semibold">Simplifying Ticket Flow for Efficient Project Development</h1>
         <div class="flex justify-between">
-          <div class="font-light text-sm text-[#6c757d] mt-2">December 23, 2024</div>
+          <div class="font-light text-sm text-[#6c757d] mt-2">5min read &#8226; December 23, 2024</div>
+          <!-- Share Link -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
