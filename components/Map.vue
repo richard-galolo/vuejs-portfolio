@@ -16,8 +16,8 @@
 
 <script setup>
 import { shallowRef, onMounted, onUnmounted, watch, inject, ref } from 'vue';
-import { Map, MapStyle, config } from '@maptiler/sdk';
-import "@maptiler/sdk/dist/maptiler-sdk.css";
+// import { Map, MapStyle, config } from '@maptiler/sdk';
+// import "@maptiler/sdk/dist/maptiler-sdk.css";
 
 const mapContainer = shallowRef(null);
 const map = shallowRef(null);
@@ -81,7 +81,11 @@ const createPulsingDot = () => {
 
 // Initialize map and add layers asynchronously
 const initializeMap = async () => {
-  config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
+    // Lazily load the MapTiler SDK
+    const { Map, MapStyle, config } = await import('@maptiler/sdk');
+    import("@maptiler/sdk/dist/maptiler-sdk.css");
+
+    config.apiKey = 'mZc0P9hLNjSYurLkdwFc';
 
   try {
     map.value = new Map({
@@ -187,7 +191,7 @@ watch(isDarkMode, async (darkMode) => {
 // Initialize timer and map
 onMounted(async () => {
   updateTime();
-  setInterval(updateTime, 3000); // Update time every second
+  setInterval(updateTime, 2000); // Update time every second
   await initializeMap(); // Initialize the map asynchronously
 });
 
