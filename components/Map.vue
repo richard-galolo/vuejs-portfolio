@@ -1,5 +1,7 @@
 <template>
-  <div class="map-wrap rounded-lg">
+  <div
+    class="map-wrap rounded-lg"
+  >
     <div
       id="map"
       class="map rounded-lg"
