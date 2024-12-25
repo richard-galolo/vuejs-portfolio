@@ -9,10 +9,7 @@
     <div class="flex-1">
       <NuxtLink to="/">
         <span
-          class="text-base font-black tracking-[-1px]"
-          v-motion-slide-visible-once-top
-          :delay="50"
-          :duration="500">
+          class="text-base font-black tracking-[-1px]">
           R G
         </span>
       </NuxtLink>

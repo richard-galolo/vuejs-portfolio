@@ -219,8 +219,8 @@ onUnmounted(() => {
 
 .timer-overlay {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: 10px;
+  left: 10px;
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
