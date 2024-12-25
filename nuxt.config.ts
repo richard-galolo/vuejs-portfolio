@@ -31,10 +31,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['nuxt-vitalizer'],
+  modules: ['@vueuse/motion/nuxt', 'nuxt-vitalizer'],
   vitalizer: {
     // Remove the render-blocking entry CSS
     disableStylesheets: 'entry',
-    disablePrefetchLinks: true
+    disablePrefetchLinks: true,
+    delayHydration: {
+      hydrateOnEvents: ['mousemove', 'scroll', 'keydown', 'click', 'touchstart', 'wheel'],
+      idleCallbackTimeout: 8000,
+      postIdleTimeout: 4000
+    }
   }
 })

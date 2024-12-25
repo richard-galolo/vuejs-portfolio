@@ -12,6 +12,7 @@
   "dependencies": {
     "@maptiler/sdk": "^2.5.1",
     "@vercel/speed-insights": "^1.1.0",
+    "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.14.1592",
     "nuxt-vitalizer": "^0.10.0",
     "vue": "latest",

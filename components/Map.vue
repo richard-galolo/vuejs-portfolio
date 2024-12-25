@@ -1,6 +1,9 @@
 <template>
   <div
     class="map-wrap rounded-lg"
+    v-motion-slide-visible-once-top
+    :delay="100"
+    :duration="500"
   >
     <div
       id="map"
