@@ -8,7 +8,13 @@
   <div class="navbar px-0">
     <div class="flex-1">
       <NuxtLink to="/">
-        <span class="text-base font-black tracking-[-1px]">R G</span>
+        <span
+          class="text-base font-black tracking-[-1px]"
+          v-motion-slide-visible-once-top
+          :delay="50"
+          :duration="500">
+          R G
+        </span>
       </NuxtLink>
     </div>
     <div class="flex-none">

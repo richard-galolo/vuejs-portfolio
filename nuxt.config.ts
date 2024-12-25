@@ -36,10 +36,5 @@ export default defineNuxtConfig({
     // Remove the render-blocking entry CSS
     disableStylesheets: 'entry',
     disablePrefetchLinks: true,
-    delayHydration: {
-      hydrateOnEvents: ['mousemove', 'scroll', 'keydown', 'click', 'touchstart', 'wheel'],
-      idleCallbackTimeout: 8000,
-      postIdleTimeout: 4000
-    }
   }
 })

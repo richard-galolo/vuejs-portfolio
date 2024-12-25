@@ -12,7 +12,7 @@
       <div
         id="timer-overlay"
         v-if="currentTime"
-        class="timer-overlay">
+        class="timer-overlay text-sm">
         {{ currentTime }}
       </div>
     </div>
@@ -219,13 +219,13 @@ onUnmounted(() => {
 
 .timer-overlay {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  bottom: 10px;
+  right: 10px;
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 0.5rem;
   z-index: 10;
-  font: 12px / 20px Helvetica Neue, Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 </style>

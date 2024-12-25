@@ -11,9 +11,20 @@
 
       <!-- Introduction -->
 			<section
-        v-motion-slide-visible-once-bottom
-        :delay="100"
-        :duration="500"
+        v-motion="{
+          initial: {
+            y: 100,
+            opacity: 0
+          },
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 100,
+              duration: 500,
+            }
+          }
+        }"
       >
 				<div class="flex gap-5">
           <div class="avatar ml-1">
@@ -69,9 +80,20 @@
       <!-- Skills -->
       <section
         class="mt-6"
-        v-motion-slide-visible-once-bottom
-        :delay="200"
-        :duration="500"
+        v-motion="{
+          initial: {
+            y: 100,
+            opacity: 0
+          },
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              duration: 500,
+            }
+          }
+        }"
       >
 				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
@@ -204,9 +226,20 @@
       <!-- Recent Projects -->
       <section
         class="mt-6"
-        v-motion-slide-visible-once-bottom
-        :delay="300"
-        :duration="500"
+        v-motion="{
+          initial: {
+            y: 100,
+            opacity: 0
+          },
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 300,
+              duration: 500,
+            }
+          }
+        }"
       >
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-2 gap-4">
@@ -464,9 +497,20 @@
       <!-- Hire Me -->
       <section
         class="mt-6 bg-amber-100 dark:bg-black p-5 rounded-lg"
-        v-motion-slide-visible-once-bottom
-        :delay="100"
-        :duration="500"
+        v-motion="{
+          initial: {
+            y: 100,
+            opacity: 0
+          },
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 300,
+              duration: 500,
+            }
+          }
+        }"
       >
         <p class="mb-2 font-semibold text-sm">Hire Me!</p>
         <p class="text-sm font-light">
