@@ -12,7 +12,7 @@
       <div
         id="timer-overlay"
         v-if="currentTime"
-        class="timer-overlay text-sm">
+        class="timer-overlay text-sm font-extralight">
         {{ currentTime }}
       </div>
     </div>
