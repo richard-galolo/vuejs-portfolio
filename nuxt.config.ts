@@ -32,4 +32,9 @@ export default defineNuxtConfig({
     },
   },
   modules: ['nuxt-vitalizer'],
+  vitalizer: {
+    // Remove the render-blocking entry CSS
+    disableStylesheets: 'entry',
+    disablePrefetchLinks: true
+  }
 })
