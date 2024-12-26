@@ -247,7 +247,7 @@
                 class="flex flex-wrap gap-2 mb-2"
               >
                 <span
-                  class="badge bg-[#f5f5f5] dark:bg-[#262626] dark:text-white rounded-lg font-medium text-sm p-2"
+                  class="badge bg-[#f5f5f5] dark:bg-[#262626] dark:text-white rounded-lg font-medium text-sm px-2 py-3"
                   v-for="framework in project.frameworks"
                 >
                   {{ framework.name }}
@@ -258,7 +258,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   type="button"
-                  class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
+                  class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#161716] dark:bg-white h-8 px-2"
                   aria-label="View source on GitHub">
                   <img
                     class="dark:brightness-1 dark:invert"
@@ -301,7 +301,7 @@
           <a href="mailto:richardgalolo@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
+            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#161716] dark:bg-white h-8 px-2"
             aria-label="Send an email to Richard Galolo">
             <img
               class="dark:brightness-1 dark:invert size-4"
@@ -314,7 +314,7 @@
           <a href="https://www.linkedin.com/in/richard-galolo-b7a4ab180/"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
+            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#161716] dark:bg-white h-8 px-2"
             aria-label="Visit Richard Galolo's LinkedIn profile">
             <img
               class="dark:brightness-1 dark:invert size-4"
@@ -326,7 +326,7 @@
           </a>
           <a href="https://www.upwork.com/freelancers/~01572f9aec60afec03"
             target="_blank"
-            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
+            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#161716] dark:bg-white h-8 px-2"
             rel="noopener noreferrer"
             aria-label="Visit Richard Galolo's Upwork profile">
             <img
