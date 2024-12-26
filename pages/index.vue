@@ -43,12 +43,10 @@
       source: 'https://github.com/richard-galolo/laravel-auth-api',
       frameworks: [
         {
-          name: 'laravel',
-          path: '/svg/projects/laravel.svg'
+          name: 'Laravel',
         },
         {
-          name: 'packagist',
-          path: '/svg/projects/packagist.svg'
+          name: 'Packagist',
         },
       ]
     },
@@ -58,16 +56,13 @@
       source: 'https://github.com/richard-galolo/laravel-stripe',
       frameworks: [
         {
-          name: 'laravel',
-          path: '/svg/projects/laravel.svg'
+          name: 'Laravel',
         },
         {
-          name: 'html5',
-          path: '/svg/projects/html5.svg'
+          name: 'Html5',
         },
         {
-          name: 'stripe',
-          path: '/svg/projects/stripe.svg'
+          name: 'Stripe',
         },
       ]
     },
@@ -77,12 +72,10 @@
       source: 'https://github.com/richard-galolo/nodejs-web-scraper',
       frameworks: [
         {
-          name: 'nodejs',
-          path: '/svg/projects/nodejs.svg'
+          name: 'Node.js',
         },
         {
-          name: 'cheerio',
-          path: '/svg/projects/cheerio.svg'
+          name: 'Cheerio',
         },
       ]
     },
@@ -92,8 +85,7 @@
       source: 'https://github.com/richard-galolo/chrome-extension-web-scraper',
       frameworks: [
         {
-          name: 'google',
-          path: '/svg/projects/google.svg'
+          name: 'Html5',
         },
       ]
     },
@@ -193,7 +185,7 @@
           }
         }"
       >
-				<p class="mb-2 font-semibold text-sm">Skills</p>
+				<p class="mb-2 font-medium text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
 					<div
             class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4"
@@ -208,7 +200,7 @@
                 loading="lazy"/>
             </div>
             <div class="flex flex-col items-left justify-center">
-              <p class="text-sm md:text-md">{{ skill.name }}</p>
+              <p class="font-medium text-sm md:text-md">{{ skill.name }}</p>
             </div>
           </div>
 				</div>
@@ -232,8 +224,8 @@
           }
         }"
       >
-				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
-        <div class="grid grid-cols-2 gap-4">
+				<p class="mb-2 font-medium text-sm">Recent Projects</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div
             class="card border border-slate-300 dark:border-[#6c757d] rounded-lg"
             v-for="project in recentProjects"
@@ -252,31 +244,30 @@
               <h3 class="text-sm font-medium">{{ project.name }}</h3>
               <p class="text-sm text-[#6c757d] mb-2">{{ project.description }}</p>
               <div
-                class="flex gap-2 mb-2"
+                class="flex flex-wrap gap-2 mb-2"
               >
-                <img
+                <span
+                  class="badge bg-[#f5f5f5] dark:bg-[#262626] dark:text-white rounded-lg font-medium text-sm p-2"
                   v-for="framework in project.frameworks"
-                  :src="framework.path"
-                  :alt="framework.name"
-                  width="18"
-                  height="18"
-                  loading="lazy"/>
+                >
+                  {{ framework.name }}
+                </span>
               </div>
               <div class="card-actions">
                 <a :href="project.source"
                   target="_blank"
                   rel="noopener noreferrer"
                   type="button"
-                  class="inline-flex items-center justify-center rounded-lg font-medium text-sm border dark:border-[#6c757d] h-10 px-4 py-2"
+                  class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
                   aria-label="View source on GitHub">
                   <img
-                    class="dark:brightness-0 dark:invert"
+                    class="dark:brightness-1 dark:invert"
                     src="/svg/projects/github.svg"
                     alt="github"
                     width="16"
                     height="16"
                     loading="lazy"/>
-                  <span class="ml-2 hidden sm:block">Source</span>
+                  <span class="ml-2">Source</span>
                 </a>
               </div>
             </div>
@@ -310,41 +301,41 @@
           <a href="mailto:richardgalolo@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-lg font-medium text-sm border border-black dark:border-[#6c757d] h-10 px-4 py-2"
+            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
             aria-label="Send an email to Richard Galolo">
-              <img
-                class="dark:brightness-0 dark:invert size-4"
-                src="/svg/general/email.svg"
-                alt="email icon"
-                width="16"
-                loading="lazy"/>
-              <span class="ml-2 hidden sm:block ">Email</span>
+            <img
+              class="dark:brightness-1 dark:invert size-4"
+              src="/svg/hire-me/email.svg"
+              alt="email icon"
+              width="16"
+              loading="lazy"/>
+            <span class="ml-2 hidden sm:block">Email</span>
           </a>
           <a href="https://www.linkedin.com/in/richard-galolo-b7a4ab180/"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-lg font-medium text-sm border border-black dark:border-[#6c757d] h-10 px-4 py-2"
+            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
             aria-label="Visit Richard Galolo's LinkedIn profile">
-              <img
-                class="dark:brightness-0 dark:invert size-4"
-                src="/svg/general/linkedIn.svg"
-                alt="linkedIn icon"
-                width="16"
-                loading="lazy"/>
-              <span class="ml-2 hidden sm:block">LinkedIn</span>
+            <img
+              class="dark:brightness-1 dark:invert size-4"
+              src="/svg/hire-me/linkedIn.svg"
+              alt="linkedIn icon"
+              width="16"
+              loading="lazy"/>
+            <span class="ml-2 hidden sm:block">LinkedIn</span>
           </a>
           <a href="https://www.upwork.com/freelancers/~01572f9aec60afec03"
             target="_blank"
-            class="inline-flex items-center justify-center rounded-lg font-medium text-sm border border-black dark:border-[#6c757d] h-10 px-4 py-2"
+            class="inline-flex items-center justify-center rounded-lg font-medium text-sm text-white dark:text-black bg-[#171717] dark:bg-white h-8 px-2"
             rel="noopener noreferrer"
             aria-label="Visit Richard Galolo's Upwork profile">
-              <img
-                class="dark:brightness-0 dark:invert size-4"
-                src="/svg/general/upwork.svg"
-                alt="upwork icon"
-                width="16"
-                loading="lazy"/>
-              <span class="ml-2 hidden sm:block">Upwork</span>
+            <img
+              class="dark:brightness-1 dark:invert size-4"
+              src="/svg/hire-me/upwork.svg"
+              alt="upwork icon"
+              width="16"
+              loading="lazy"/>
+            <span class="ml-2 hidden sm:block">Upwork</span>
           </a>
         </div>
       </section>
