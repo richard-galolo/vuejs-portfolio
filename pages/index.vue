@@ -54,7 +54,7 @@
     },
     {
       name: 'Stripe Payment',
-      description: 'Created a user authentication API package compatible with any Laravel project.',
+      description: 'Developed a card management and checkout API using Laravel.',
       source: 'https://github.com/richard-galolo/laravel-stripe',
       frameworks: [
         {
