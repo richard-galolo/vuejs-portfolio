@@ -185,10 +185,10 @@
           }
         }"
       >
-				<p class="mb-2 font-medium text-sm">Skills</p>
+				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
 					<div
-            class="h-full w-auto border border-slate-300 dark:border-[#6c757d] rounded-lg p-3 flex flex-row space-x-4"
+            class="h-full w-auto border border-slate-300 dark:border-[#262626] rounded-lg p-3 flex flex-row space-x-4"
             v-for="skill in skills"
           >
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
@@ -224,10 +224,10 @@
           }
         }"
       >
-				<p class="mb-2 font-medium text-sm">Recent Projects</p>
+				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div
-            class="card border border-slate-300 dark:border-[#6c757d] rounded-lg"
+            class="card border border-slate-300 dark:border-[#262626] rounded-lg"
             v-for="project in recentProjects"
           >
             <figure class="p-4"
@@ -240,11 +240,11 @@
                 class="rounded-lg w-full h-auto"
                 loading="lazy" />
             </figure>
-            <div class="card-body p-4">
+            <div class="card-body p-4 space-y-1">
               <h3 class="text-sm font-medium">{{ project.name }}</h3>
-              <p class="text-sm text-[#6c757d] mb-2">{{ project.description }}</p>
+              <p class="text-sm text-[#6c757d]">{{ project.description }}</p>
               <div
-                class="flex flex-wrap gap-2 mb-2"
+                class="flex flex-wrap gap-2"
               >
                 <span
                   class="badge bg-[#f5f5f5] dark:bg-[#262626] dark:text-white rounded-lg font-medium text-sm px-2 py-3"
@@ -297,7 +297,7 @@
         <p class="text-sm font-light">
           I’m available for exciting opportunities in backend development and web applications. Let’s collaborate to create impactful solutions!
         </p>
-        <div class="flex mt-4 gap-3">
+        <div class="flex mt-4 gap-2">
           <a href="mailto:richardgalolo@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
