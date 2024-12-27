@@ -134,12 +134,12 @@
               href="mailto:richardgalolo@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex text-[#6c757d] hover:underline decoration-dotted"
+              class="inline-flex text-[#747575] hover:underline decoration-dotted"
               @mouseover="hovering = false"
               @mouseout="hovering = true"
             >
               <div
-                class="flex gap-1 text-sm text-[#6c757d]">
+                class="flex gap-1 text-sm text-[#747575]">
                 <!-- Dynamic SVG -->
                 <svg
                   v-if="hovering"
@@ -188,7 +188,7 @@
 				<p class="mb-2 font-semibold text-sm">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
 					<div
-            class="h-full w-auto border border-slate-300 dark:border-[#262626] rounded-lg p-3 flex flex-row space-x-4"
+            class="h-full w-auto border border-[#e4e4e5] dark:border-[#262626] rounded-lg p-3 flex flex-row space-x-4"
             v-for="skill in skills"
           >
             <div class="h-full w-auto aspect-square rounded-lg flex items-center justify-center">
@@ -227,7 +227,7 @@
 				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div
-            class="card border border-slate-300 dark:border-[#262626] rounded-lg"
+            class="card border border-[#e4e4e5] dark:border-[#262626] rounded-lg"
             v-for="project in recentProjects"
           >
             <figure class="p-4"
@@ -242,7 +242,7 @@
             </figure>
             <div class="card-body p-4 space-y-1">
               <h3 class="text-sm font-medium">{{ project.name }}</h3>
-              <p class="text-sm text-[#6c757d]">{{ project.description }}</p>
+              <p class="text-sm text-[#747575]">{{ project.description }}</p>
               <div
                 class="flex flex-wrap gap-2"
               >

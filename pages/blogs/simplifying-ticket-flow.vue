@@ -60,7 +60,7 @@
 
       <!-- Breadcrumbs -->
       <div class="breadcrumbs text-sm">
-        <ul class="text-[#6c757d]">
+        <ul class="text-[#747575]">
           <li>
             <NuxtLink to="/blog"
               class="hover:underline decoration-dotted">
@@ -75,7 +75,7 @@
       <section class="mt-4">
         <h1 class="text-2xl font-semibold">Simplifying Ticket Flow for Efficient Project Development</h1>
         <div class="flex justify-between">
-          <div class="font-light text-sm text-[#6c757d] mt-2">5min read &#8226; December 23, 2024</div>
+          <div class="font-light text-sm text-[#747575] mt-2">5min read &#8226; December 23, 2024</div>
           <!-- Share Link -->
           <svg
             xmlns="http://www.w3.org/2000/svg"

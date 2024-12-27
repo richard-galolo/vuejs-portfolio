@@ -67,7 +67,7 @@
 					<h1 class="text-xl font-semibold">
 						Richard Galolo
 					</h1>
-					<p class="text-sm text-[#6c757d]">
+					<p class="text-sm text-[#747575]">
             PHP Laravel Developer
           </p>
 				</div>
@@ -90,7 +90,7 @@
             <div class="flex flex-1 flex-col text-sm">
               <p>{{ job.position }} at {{ job.company }}</p>
               <p>{{ job.location }}</p>
-              <ul class="list-inside text-[#6c757d] text-balance leading-5">
+              <ul class="list-inside text-[#747575] text-balance leading-5">
                 <li v-for="(task, index) in job.tasks"
                   :key="index"
                   class="flex gap-1 mt-2">
@@ -113,7 +113,7 @@
             <div class="mr-6 w-full max-w-[100px] text-sm">2015 - 2019</div>
             <div class="flex flex-1 flex-col text-sm">
               <p>Bachelor of Science in Information Technology</p>
-              <ul class="list-inside text-[#6c757d] text-balance">
+              <ul class="list-inside text-[#747575] text-balance">
                 <li>
                   AMA Computer Learning Center
                 </li>
@@ -136,7 +136,7 @@
               <a href="mailto:richardgalolo@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-[#6c757d] hover:underline decoration-dotted">
+                class="inline-flex text-[#747575] hover:underline decoration-dotted">
                 richardgalolo@gmail.com
                 <svg
                   width="12"
@@ -155,7 +155,7 @@
               <a href="https://www.linkedin.com/in/richard-galolo-b7a4ab180/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex text-[#6c757d] hover:underline decoration-dotted">
+                class="inline-flex text-[#747575] hover:underline decoration-dotted">
                 richard-galolo
                 <svg
                   width="12"

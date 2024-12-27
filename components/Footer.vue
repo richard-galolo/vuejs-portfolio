@@ -1,6 +1,6 @@
 <template>
     <footer class="footer flex justify-between items-center mt-5 py-5">
-      <ul class="flex gap-5 font-sm">
+      <ul class="flex gap-4 font-sm">
       <li>
         <a class="flex items-center justify-center"
           rel="noopener noreferrer"
