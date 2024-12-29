@@ -76,7 +76,9 @@
       <!-- Bio -->
       <div class="mt-6">
         <p class="mb-2 font-semibold text-sm">About</p>
-				<p class="text-sm text-balance">Web developer with six years of experience. I enjoy creating new and innovative web applications. I am seeking a challenging role that will allow me to continuously improve my skills and contribute to the success of the team.</p>
+				<p class="text-sm text-balance leading-6">
+          Web developer with six years of experience. I enjoy creating new and innovative web applications. I am seeking a challenging role that will allow me to continuously improve my skills and contribute to the success of the team.
+        </p>
 			</div>
 
       <!-- Experiences -->
@@ -90,7 +92,7 @@
             <div class="flex flex-1 flex-col text-sm">
               <p>{{ job.position }} at {{ job.company }}</p>
               <p>{{ job.location }}</p>
-              <ul class="list-inside text-[#747575] text-balance leading-5">
+              <ul class="list-inside text-[#747575] text-balance leading-6">
                 <li v-for="(task, index) in job.tasks"
                   :key="index"
                   class="flex gap-1 mt-2">
@@ -111,7 +113,7 @@
         <div class="flex flex-col gap-6">
           <div class="flex">
             <div class="mr-6 w-full max-w-[100px] text-sm">2015 - 2019</div>
-            <div class="flex flex-1 flex-col text-sm">
+            <div class="flex flex-1 flex-col text-sm leading-6">
               <p>Bachelor of Science in Information Technology</p>
               <ul class="list-inside text-[#747575] text-balance">
                 <li>

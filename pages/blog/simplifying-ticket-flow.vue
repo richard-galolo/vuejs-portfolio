@@ -75,7 +75,7 @@
       <section class="mt-4">
         <h1 class="text-2xl font-semibold">Simplifying Ticket Flow for Efficient Project Development</h1>
         <div class="flex justify-between">
-          <div class="font-light text-sm text-[#747575] mt-2">5min read &#8226; December 23, 2024</div>
+          <div class="font-light text-sm text-[#747575] mt-2">3min read &#8226; December 23, 2024</div>
           <!-- Share Link -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
