@@ -1,6 +1,36 @@
 <script setup>
   const hovering = ref(true);
 
+  const jobs = [
+    {
+      id: 1,
+      date: '2021 - Present',
+      position: 'Web Developer',
+      company: 'Freelance',
+      location: 'Remote',
+      logo: 'svg//work-experience/freelance.svg',
+      tasks:'Developed fully-functional web applications from scratch, beginning with the creation of database schema diagrams to guide the development process.',
+    },
+    {
+      id: 2,
+      date: '2020 - 2021',
+      position: 'Laravel Developer',
+      company: 'TBL Technerds',
+      location: 'Remote',
+      logo: 'https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/ijwvprhaxwomyxhq1ldg',
+      tasks: 'Managed both backend and web administration for web and mobile applications, optimizing performance and scalability.',
+    },
+    {
+      id: 3,
+      date: '2019 - 2020',
+      position: 'Web Developer',
+      company: 'D’Courtyard Technology Hub',
+      location: 'Office',
+      logo: 'https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/298799651_612450157034942_4801208904091840542_n.png?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEDTsvTZvJJZe-oWEga6hZLYo-U9NXID2xij5T01cgPbL87moPhS2HuR_hRoJdPY_DEfijoSghV7wFOrWDpsrf0&_nc_ohc=N5_QSCyDv2AQ7kNvgGM-68H&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=AE_uqSvqC2_JZD4eD8DATtE&oh=00_AYDr5iHm9931hc2p5irlX12FEp3lXrcj_RShPQrr9LxUNg&oe=6776590C',
+      tasks: 'Developed and maintained the administrator side of a mobile application by implementing new features and ensuring optimal functionality.',
+    },
+  ];
+
   const skills = [
     {
       name: 'Laravel',
@@ -90,6 +120,25 @@
       ]
     },
   ];
+
+  // Reactive state for visible descriptions
+  const visibleDescriptions = ref([]);
+
+  // Methods
+  const toggleDescription = (index) => {
+    if (visibleDescriptions.value.includes(index)) {
+      // Hide if already visible
+      visibleDescriptions.value = visibleDescriptions.value.filter(
+        (i) => i !== index
+      );
+    } else {
+      // Show if hidden
+      visibleDescriptions.value.push(index);
+    }
+  };
+
+  const isVisible = (index) => visibleDescriptions.value.includes(index);
+
 </script>
 
 <template>
@@ -166,6 +215,74 @@
         <!-- Bio -->
         <h2 class="text-sm mt-4">I'm a PHP Laravel Developer with six years of experience, specializing in backend development.</h2>
 			</section>
+
+      <!-- Work Experience -->
+      <section
+        class="mt-6"
+        v-motion="{
+          initial: {
+            y: 100,
+            opacity: 0
+          },
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 130,
+              duration: 300,
+            }
+          }
+        }"
+      >
+        <p class="font-semibold text-sm mb-2">Work Experience</p>
+        <div
+          class="mb-5"
+          v-for="(job, index) in jobs"
+          :key="job.id"
+        >
+          <div class="flex justify-between ">
+            <div>
+              <div class="flex flex-row gap-3">
+                <div class="avatar">
+                  <div class="w-12 h-12 rounded-full border p-1">
+                    <img :src="job.logo" />
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <p
+                    class="text-sm font-medium flex items-center cursor-pointer"
+                    @click="toggleDescription(index)"
+                  >
+                    {{ job.position }}
+                    <span
+                      class="arrow ml-1 text-xs font-light"
+                      :class="{ 'rotate-90': isVisible(index) }"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="w-3 h-3 transition-transform duration-300 dark:fill-white"
+                      >
+                        <path
+                          d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                        />
+                      </svg>
+                    </span>
+                  </p>
+                  <p class="text-sm font-light">{{ job.company }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-sm text-[#747575]">{{ job.date }}</div>
+          </div>
+          <p
+            class="decription text-sm text-pretty ml-14"
+            v-show="visibleDescriptions.includes(index)"
+          >
+            {{ job.tasks }}
+          </p>
+        </div>
+      </section>
 
       <!-- Skills -->
       <section
