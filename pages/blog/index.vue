@@ -20,9 +20,19 @@
         <ul class="space-y-6 mt-6">
           <li class="text-sm"
             v-motion-slide-left
+            :delay="80"
+            :duration="300">
+            <NuxtLink to="/blog/my-portfolio"
+              class="hover:underline decoration-dotted">
+              My Portfolio
+            </NuxtLink>
+            <p class="font-light text-sm text-[#747575] mt-1">December 29, 2024</p>
+          </li>
+          <li class="text-sm"
+            v-motion-slide-left
             :delay="100"
             :duration="300">
-            <NuxtLink to="/blogs/simplifying-ticket-flow"
+            <NuxtLink to="/blog/simplifying-ticket-flow"
               class="hover:underline decoration-dotted">
               Simplifying Ticket Flow for Efficient Project Development
             </NuxtLink>

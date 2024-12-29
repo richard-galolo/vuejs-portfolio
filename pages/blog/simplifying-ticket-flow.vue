@@ -89,7 +89,7 @@
         </div>
 
         <!-- Image -->
-        <div class="mt-6">
+        <div class="mt-8">
           <a
             href="/img/ticket-flow-diagram.png"
             target="_blank"
@@ -102,30 +102,32 @@
           </a>
         </div>
 
-        <h2 class="text-lg font-semibold mt-6">Introduction</h2>
-        <p class="leading-6 mt-2">Effective project management begins with a structured ticket flow. This process helps keep development on track, reduces bottlenecks, and ensures your team delivers high-quality products on time.</p>
-
-        <p class="leading-6 mt-2">In this post, we’ll walk you through each stage of the ticket flow and explain how to leverage it to optimize your development workflow.</p>
+        <h2 class="text-lg font-semibold mt-8">Introduction</h2>
+        <p class="leading-7 mt-4">
+          Effective project management begins with a structured ticket flow. This process helps keep development on track, reduces bottlenecks, and ensures your team delivers high-quality products on time.
+        </p>
+        <p class="leading-7 mt-2">In this post, we’ll walk you through each stage of the ticket flow and explain how to leverage it to optimize your development workflow.</p>
       </section>
 
-      <h3 class="text-lg font-semibold mt-6">Stages of Ticket Flow</h3>
-
-      <section>
+      <section class="mt-8">
+        <h3 class="text-lg font-semibold">
+            Stages of Ticket Flow
+        </h3>
         <ul>
           <li
             v-for="(stage, index) in stages"
             :key="stage.id"
-            :class="index != 0 ? 'mt-6' : 'mt-4' "
+            class="mt-5"
             :id="stage.id">
             <p class="font-semibold">{{ index + 1 }}. {{ stage.title }}</p>
-            <p class="leading-6 mt-1">{{ stage.content }}</p>
+            <p class="leading-7 mt-2">{{ stage.content }}</p>
           </li>
         </ul>
       </section>
 
-      <section class="mt-6">
+      <section class="mt-8">
         <h4 class="text-lg font-semibold">Conclusion</h4>
-        <p class="leading-6">Mastering ticket flow isn’t just about moving tasks from one stage to the next. It’s about creating a system that enhances efficiency, fosters collaboration, and ensures transparency. With a solid ticket flow, your team will be better equipped to deliver high-quality software on time, while keeping everyone aligned with project goals.</p>
+        <p class="leading-7 mt-4">Mastering ticket flow isn’t just about moving tasks from one stage to the next. It’s about creating a system that enhances efficiency, fosters collaboration, and ensures transparency. With a solid ticket flow, your team will be better equipped to deliver high-quality software on time, while keeping everyone aligned with project goals.</p>
       </section>
     </main>
 

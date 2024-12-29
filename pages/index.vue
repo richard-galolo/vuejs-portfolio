@@ -290,7 +290,7 @@
           }
         }"
       >
-        <p class="mb-2 font-semibold text-xs">Hire Me!</p>
+        <p class="mb-2 font-semibold text-sm">Hire Me!</p>
         <p class="text-sm font-light">
           I’m available for exciting opportunities in backend development and web applications. Let’s collaborate to create impactful solutions!
         </p>
@@ -359,11 +359,18 @@
         <div class="grid grid-cols-1 gap-4">
           <ul class="space-y-6">
             <li class="text-sm transition hover:translate-x-2 hover:scale-2">
-              <NuxtLink to="/blogs/simplifying-ticket-flow"
+              <NuxtLink to="/blog/simplifying-ticket-flow"
                 class="hover:underline decoration-dotted">
                 Simplifying Ticket Flow for Efficient Project Development
               </NuxtLink>
               <p class="font-light text-sm text-[#747575] mt-1">December 23, 2024</p>
+            </li>
+            <li class="text-sm transition hover:translate-x-2 hover:scale-2">
+              <NuxtLink to="/blog/my-portfolio"
+                class="hover:underline decoration-dotted">
+                My Portfolio
+              </NuxtLink>
+              <p class="font-light text-sm text-[#747575] mt-1">December 29, 2024</p>
             </li>
           </ul>
 				</div>
