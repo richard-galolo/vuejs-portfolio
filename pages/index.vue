@@ -59,9 +59,6 @@
           name: 'Laravel',
         },
         {
-          name: 'Html5',
-        },
-        {
           name: 'Stripe',
         },
       ]
@@ -185,7 +182,7 @@
           }
         }"
       >
-				<p class="mb-2 font-semibold text-sm">Skills</p>
+				<p class="mb-2 font-semibold text-xs">Skills</p>
 				<div class="grid grid-cols-2 gap-4">
 					<div
             class="h-full w-auto border border-[#e4e4e5] dark:border-[#262626] rounded-lg p-3 flex flex-row space-x-4"
@@ -224,7 +221,7 @@
           }
         }"
       >
-				<p class="mb-2 font-semibold text-sm">Recent Projects</p>
+				<p class="mb-2 font-semibold text-xs">Recent Projects</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div
             class="card border border-[#e4e4e5] dark:border-[#262626] rounded-lg"
@@ -293,7 +290,7 @@
           }
         }"
       >
-        <p class="mb-2 font-semibold text-sm">Hire Me!</p>
+        <p class="mb-2 font-semibold text-xs">Hire Me!</p>
         <p class="text-sm font-light">
           I’m available for exciting opportunities in backend development and web applications. Let’s collaborate to create impactful solutions!
         </p>
@@ -339,6 +336,38 @@
           </a>
         </div>
       </section>
+
+      <!-- Recent Post -->
+      <section
+        class="mt-6"
+        v-motion="{
+          initial: {
+            y: 100,
+            opacity: 0
+          },
+          enter: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 250,
+              duration: 300,
+            }
+          }
+        }"
+      >
+				<p class="mb-2 font-semibold text-xs">Recent Posts</p>
+        <div class="grid grid-cols-1 gap-4">
+          <ul class="space-y-6">
+            <li class="text-sm transition hover:translate-x-2 hover:scale-2">
+              <NuxtLink to="/blogs/simplifying-ticket-flow"
+                class="hover:underline decoration-dotted">
+                Simplifying Ticket Flow for Efficient Project Development
+              </NuxtLink>
+              <p class="font-light text-sm text-[#747575] mt-1">December 23, 2024</p>
+            </li>
+          </ul>
+				</div>
+			</section>
     </main>
 
     <Footer />
