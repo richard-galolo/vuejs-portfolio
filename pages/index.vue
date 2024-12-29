@@ -194,6 +194,7 @@
                 :src="skill.path"
                 :alt="skill.name"
                 width="24"
+                height="24"
                 loading="lazy"/>
             </div>
             <div class="flex flex-col items-left justify-center">
