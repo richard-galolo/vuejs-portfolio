@@ -3,7 +3,7 @@
     class="map-wrap rounded-lg"
     v-motion-slide-visible-once-top
     :delay="100"
-    :duration="500"
+    :duration="300"
   >
     <div
       id="map"

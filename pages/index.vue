@@ -111,7 +111,7 @@
             opacity: 1,
             transition: {
               delay: 100,
-              duration: 500,
+              duration: 300,
             }
           }
         }"
@@ -179,8 +179,8 @@
             y: 0,
             opacity: 1,
             transition: {
-              delay: 200,
-              duration: 500,
+              delay: 150,
+              duration: 300,
             }
           }
         }"
@@ -218,8 +218,8 @@
             y: 0,
             opacity: 1,
             transition: {
-              delay: 300,
-              duration: 500,
+              delay: 200,
+              duration: 300,
             }
           }
         }"
@@ -287,8 +287,8 @@
             y: 0,
             opacity: 1,
             transition: {
-              delay: 300,
-              duration: 500,
+              delay: 250,
+              duration: 300,
             }
           }
         }"
