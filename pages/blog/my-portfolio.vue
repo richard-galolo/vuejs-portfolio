@@ -51,6 +51,13 @@
       </section>
 
       <section class="mt-8">
+        <h4 class="text-lg font-semibold">History</h4>
+        <p class="leading-7 mt-4">
+          This portfolio was created from scratch using the Nuxt.js framework and Tailwind CSS, inspired by a variety of websites and design platforms.
+        </p>
+      </section>
+
+      <section class="mt-8">
         <h4 class="text-lg font-semibold">Inspirations</h4>
         <p class="leading-7 mt-4">
           I explore platforms like Medium, Reddit, Google, YouTube, and other developer websites, constantly searching for fresh ideas and inspiration. Here are some of my favorites:
